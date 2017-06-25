@@ -31,44 +31,22 @@ def historical_data(identifier, item):
     return results
 
 
-Security = namedtuple('Security', ['ticker', 'altmanzscore', 'marketcap', 'employees', 'cashandequivalents',
-                                   'netincome', 'totalrevenue', 'pricetoearnings', 'pricetobook', 'pricetorevenue'])
+def _extract_tags(conditions):
+    return [c.split("~")[0] for c in conditions]
+
 
 # TODO: make it securities.search
-def securities_search():
+def securities_search(conditions):
 
-    condition = "altmanzscore~gt~0,marketcap~gt~50000000,employees~gt~100,cashandequivalents~gt~0,netincome~gt~0,totalrevenue~gt~0,pricetoearnings~lt~1000,pricetobook~lt~1000,pricetorevenue~lt~1000"
-
-    # results = []
-    # cur_page = 1
-    # total_pages = 1
-    # while cur_page <= total_pages:
-    #     js = get(page=cur_page)
-    #     print(js)
-    #
-    #     info = APIInfo(**js)
-    #     # total_pages = info.total_pages        # FIXME
-    #
-    #     results.extend(map(lambda s: Stock(**s), js["data"]))
-    #     cur_page += 1
+    tags = _extract_tags(conditions)
+    tags.append("ticker")
+    Security = namedtuple("Security", tags)
 
     # FIXME: multipage
-    rsrc = "/securities/search?page_number={}&conditions={}".format(1, condition)
+    query_string = ",".join(conditions)
+    rsrc = "/securities/search?page_number={}&conditions={}".format(1, query_string)
     results = _get_all(rsrc, shape=Security)
-    for entry in results:
-        print(entry)
-    #print("Total results:", info.result_count, len(results))
-
-    # --- test encoding of results
-
-    with open("dump.json", "w") as f:
-        json.dump(results, f)
-    with open("header.pickle", "wb") as f:
-        pickle.dump(Security, f)
-    with open("dump.pickle", "wb") as f:
-        pickle.dump(results, f)
-
-    return results
+    return results, Security
 
 
 # ---------------------------------------------------------------
@@ -80,7 +58,9 @@ APIInfo = namedtuple('APIInfo', ['result_count', 'current_page', 'total_pages', 
 APIInfo_for_historical = namedtuple('APIInfo', ['result_count', 'current_page', 'total_pages', 'page_size', 'api_call_credits', 'data',
                                  'identifier', 'item'])
 
-def _get(resource, page=1):
+def _get(resource, page=1): # TODO: make it page_number to match API
+    # TODO : don't open the keys file on every page get
+    # TODO : move implementation into separate get_auth() function
     with open("keys.json") as f:
         keys = json.load(f)['intrinio']
     my_auth = HTTPBasicAuth(username=keys['user'], password=keys['pass'])
@@ -101,7 +81,7 @@ def _get_all(resource, shape, meta=None):
         print(js)
 
         #info = meta(**js)   # TODO: better name for meta
-        # total_pages = info.total_pages        # FIXME
+        # total_pages = info.total_pages        # FIXME multipage
 
         results.extend(map(lambda s: shape(**s), js["data"]))
         cur_page += 1

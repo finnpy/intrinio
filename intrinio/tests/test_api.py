@@ -87,7 +87,18 @@ class TestAPI(unittest.TestCase):
         )
         if local:
             intrinio._get = lambda rsrc, page: resp
-        r = intrinio.securities_search()
+
+        conditions = ["altmanzscore~gt~0",
+                      "marketcap~gt~50000000",
+                      "employees~gt~100",
+                      "cashandequivalents~gt~0",
+                      "netincome~gt~0",
+                      "totalrevenue~gt~0",
+                      "pricetoearnings~lt~1000",
+                      "pricetobook~lt~1000",
+                      "pricetorevenue~lt~1000"
+                      ]
+        r, s = intrinio.securities_search(conditions)
         if local:
             self.assertEqual(len(r), 100)
             APD = r[-2] # just an example, pick second to last
@@ -95,7 +106,9 @@ class TestAPI(unittest.TestCase):
             self.assertEqual(APD.pricetorevenue, 3.2682)
             self.assertEqual(APD.pricetobook, 3.4176)
             self.assertEqual(APD.employees, 18300)
-
+        else:
+            print(r[0])
+            print(r[0].marketcap)
 
 if __name__ == '__main__':
     unittest.main(verbosity=2)
