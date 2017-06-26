@@ -1,17 +1,40 @@
-from collections import namedtuple
 import json
 import sys
+from collections import namedtuple
+
 if sys.version_info < (3, 0):
-    import cPickle as pickle
+    pass
 else:
-    import pickle
+    pass
 
 import requests
 from requests.auth import HTTPBasicAuth
 
+CompanyIndex = namedtuple("CompanyIndex", ["ticker", "name", "lei", "cik", "latest_filing_date"])
+
+Company = namedtuple("Company",
+                     ["ticker", "name", "lei", "legal_name", "stock_exchange", "sic", "short_description",
+                      "long_description", "ceo", "company_url", "business_address", "mailing_address",
+                      "business_phone_no", "hq_address1", "hq_address2", "hq_address_city",
+                      "hq_address_postal_code",
+                      "entity_legal_form", "securities", "cik", "latest_filing_date", "hq_state", "hq_country",
+                      "inc_state", "inc_country", "employees", "entity_status", "sector", "industry_category",
+                      "industry_group", "template", "standardized_active"])
+
+
+def companies(identifier=None):
+    if identifier is None:
+        rsrc = "/companies"
+        results = _get_all(rsrc, shape=CompanyIndex)
+    else:
+        rsrc = "/companies?identifier={}".format(identifier)
+        results = _get_all(rsrc, shape=Company)
+    return results
+
 
 Price = namedtuple('Price', ["date", "open", "high", "low", "close", "volume", "ex_dividend", "split_ratio",
                              "adj_open", "adj_high", "adj_low", "adj_close", "adj_volume"])
+
 
 def prices(identifier):
     rsrc = "/prices?identifier={}".format(identifier)
@@ -22,6 +45,7 @@ def prices(identifier):
 
 
 Sample = namedtuple('Sample', ["date", "value"])
+
 
 def historical_data(identifier, item):
     rsrc = "/historical_data?identifier={}&item={}".format(identifier, item)
@@ -37,7 +61,6 @@ def _extract_tags(conditions):
 
 # TODO: make it securities.search
 def securities_search(conditions):
-
     tags = _extract_tags(conditions)
     tags.append("ticker")
     Security = namedtuple("Security", tags)
@@ -53,12 +76,16 @@ def securities_search(conditions):
 
 # TODO: avoid duplicate fields
 # TODO: not to mention we are not using these namedtuples anywhere
-APIInfo = namedtuple('APIInfo', ['result_count', 'current_page', 'total_pages', 'page_size', 'api_call_credits', 'data'])
+APIInfo = namedtuple('APIInfo',
+                     ['result_count', 'current_page', 'total_pages', 'page_size', 'api_call_credits', 'data'])
 
-APIInfo_for_historical = namedtuple('APIInfo', ['result_count', 'current_page', 'total_pages', 'page_size', 'api_call_credits', 'data',
-                                 'identifier', 'item'])
+APIInfo_for_historical = namedtuple('APIInfo',
+                                    ['result_count', 'current_page', 'total_pages', 'page_size', 'api_call_credits',
+                                     'data',
+                                     'identifier', 'item'])
 
-def _get(resource, page=1): # TODO: make it page_number to match API
+
+def _get(resource, page=1):  # TODO: make it page_number to match API
     # TODO : don't open the keys file on every page get
     # TODO : move implementation into separate get_auth() function
     with open("keys.json") as f:
@@ -78,13 +105,19 @@ def _get_all(resource, shape, meta=None):
     total_pages = 1
     while cur_page <= total_pages:
         js = _get(resource, page=cur_page)
-        print(js)
+        print(json.dumps(js))
 
-        #info = meta(**js)   # TODO: better name for meta
+        # info = meta(**js)   # TODO: better name for meta
         # total_pages = info.total_pages        # FIXME multipage
 
-        results.extend(map(lambda s: shape(**s), js["data"]))
+        paged = "total_pages" in js.keys()
+        if paged:
+            results.extend(map(lambda s: shape(**s), js["data"]))
+        else:
+            return shape(**js)
+
         cur_page += 1
 
-    print("Total results:", js["result_count"], len(results))
+    if paged:
+        print("Total results:", js["result_count"], len(results))
     return results
