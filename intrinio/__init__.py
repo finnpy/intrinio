@@ -72,6 +72,26 @@ def securities_search(conditions):
     return results, Security
 
 
+SecurityIndex = namedtuple("SecurityIndex", ["ticker", "figi_ticker", "figi", "composite_figi", "composite_figi_ticker",
+                                             "security_name", "market_sector",
+                                             "security_type", "stock_exchange", "last_crsp_adj_date"])
+
+Security = namedtuple("Security", ["ticker", "figi_ticker", "figi", "composite_figi", "composite_figi_ticker",
+                                   "security_name", "market_sector", "security_type", "stock_exchange",
+                                   "last_crsp_adj_date", "figi_uniqueid", "share_class_figi", "figi_exch_cntry",
+                                   "currency", "mic", "exch_symbol", "etf", "delisted_security",   "primary_listing"])
+
+
+def securities(identifier=None):
+    if identifier is None:
+        rsrc = "/securities"
+        results = _get_all(rsrc, shape=SecurityIndex)
+    else:
+        rsrc = "/securities?identifier={}".format(identifier)
+        results = _get_all(rsrc, shape=Security)
+    return results
+
+
 # ---------------------------------------------------------------
 
 # TODO: avoid duplicate fields

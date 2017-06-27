@@ -22,7 +22,6 @@ class TestAPI(unittest.TestCase):
         if local:
             self.assertIn("ADMS", tickers)
 
-
     def test_companies_by_id(self):
         if local:
             intrinio._get = lambda rsrc, page: load("companies_aapl.json")
@@ -47,6 +46,16 @@ class TestAPI(unittest.TestCase):
         r = intrinio.historical_data(identifier="AAPL", item="altmanzscore")
         if local:
             self.assertEqual(len(r), 33)
+
+    def test_securities(self):
+        if local:
+            intrinio._get = lambda rsrc, page: load("securities.json")
+        r = intrinio.securities()
+
+    def test_securities_by_id(self):
+        if local:
+            intrinio._get = lambda rsrc, page: load("securities_aapl.json")
+        r = intrinio.securities("AAPL")
 
     def test_securities_search(self):
         if local:
