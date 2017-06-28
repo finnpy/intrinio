@@ -4,18 +4,21 @@ import unittest
 import intrinio
 
 local = True
+intrinio.max_pages = 2  # during tests, limit number of pages to retrieve
 
 
-def load(name):
+def inject_response(name):
     with open(name, "r") as f:
-        return json.load(f)
+        lines = f.readlines()
+    print(len(lines))
+    intrinio._get = lambda rsrc, params, page: json.loads(lines[page-1])
 
 
 class TestAPI(unittest.TestCase):
 
     def test_companies(self):
         if local:
-            intrinio._get = lambda rsrc, page: load("companies.json")
+            inject_response("companies.json")
         r = intrinio.companies()
         tickers = [c.ticker for c in r]
         self.assertIn("AAPL", tickers)
@@ -24,13 +27,13 @@ class TestAPI(unittest.TestCase):
 
     def test_companies_by_id(self):
         if local:
-            intrinio._get = lambda rsrc, page: load("companies_aapl.json")
+            inject_response("companies_aapl.json")
         r = intrinio.companies("AAPL")
         self.assertEqual(r.ticker, "AAPL")
 
     def test_prices(self):
         if local:
-            intrinio._get = lambda rsrc, page: load("prices_aapl.json")
+            inject_response("prices_aapl.json")
         r = intrinio.prices("AAPL")
         if local:
             self.assertEqual(len(r), 2)
@@ -41,7 +44,7 @@ class TestAPI(unittest.TestCase):
 
     def test_historical_data(self):
         if local:
-            intrinio._get = lambda rsrc, page: load("historical_data_aapl.json")
+            inject_response("historical_data_aapl.json")
 
         r = intrinio.historical_data(identifier="AAPL", item="altmanzscore")
         if local:
@@ -49,17 +52,17 @@ class TestAPI(unittest.TestCase):
 
     def test_securities(self):
         if local:
-            intrinio._get = lambda rsrc, page: load("securities.json")
+            inject_response("securities.json")
         r = intrinio.securities()
 
     def test_securities_by_id(self):
         if local:
-            intrinio._get = lambda rsrc, page: load("securities_aapl.json")
+            inject_response("securities_aapl.json")
         r = intrinio.securities("AAPL")
 
     def test_securities_search(self):
         if local:
-            intrinio._get = lambda rsrc, page: load("securities_search.json")
+            inject_response("securities_search.json")
 
         conditions = ["altmanzscore~gt~0",
                       "marketcap~gt~50000000",

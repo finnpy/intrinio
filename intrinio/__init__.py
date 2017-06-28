@@ -1,14 +1,10 @@
-import json
-import sys
 from collections import namedtuple
-
-if sys.version_info < (3, 0):
-    pass
-else:
-    pass
+import json
+import urllib
 
 import requests
 from requests.auth import HTTPBasicAuth
+
 
 CompanyIndex = namedtuple("CompanyIndex", ["ticker", "name", "lei", "cik", "latest_filing_date"])
 
@@ -23,12 +19,11 @@ Company = namedtuple("Company",
 
 
 def companies(identifier=None):
+    rsrc = "/companies"
     if identifier is None:
-        rsrc = "/companies"
-        results = _get_all(rsrc, shape=CompanyIndex)
+        results = _get_all(rsrc, {}, shape=CompanyIndex)
     else:
-        rsrc = "/companies?identifier={}".format(identifier)
-        results = _get_all(rsrc, shape=Company)
+        results = _get_all(rsrc, {"identifier": identifier}, shape=Company)
     return results
 
 
@@ -37,8 +32,8 @@ Price = namedtuple('Price', ["date", "open", "high", "low", "close", "volume", "
 
 
 def prices(identifier):
-    rsrc = "/prices?identifier={}".format(identifier)
-    results = _get_all(rsrc, shape=Price)
+    rsrc = "/prices"
+    results = _get_all(rsrc, {"identifier": identifier}, shape=Price)
     for entry in results:
         print(entry)
     return results
@@ -48,8 +43,8 @@ Sample = namedtuple('Sample', ["date", "value"])
 
 
 def historical_data(identifier, item):
-    rsrc = "/historical_data?identifier={}&item={}".format(identifier, item)
-    results = _get_all(rsrc, shape=Sample, meta=APIInfo_for_historical)
+    rsrc = "/historical_data"
+    results = _get_all(rsrc, {"identifier": identifier, "item": item}, shape=Sample)
     for entry in results:
         print(entry)
     return results
@@ -61,14 +56,14 @@ def _extract_tags(conditions):
 
 # TODO: make it securities.search
 def securities_search(conditions):
+    rsrc = "/securities/search"
     tags = _extract_tags(conditions)
     tags.append("ticker")
+    query_string = ",".join(conditions)
+
     Security = namedtuple("Security", tags)
 
-    # FIXME: multipage
-    query_string = ",".join(conditions)
-    rsrc = "/securities/search?page_number={}&conditions={}".format(1, query_string)
-    results = _get_all(rsrc, shape=Security)
+    results = _get_all(rsrc, {"conditions": query_string}, shape=Security)
     return results, Security
 
 
@@ -83,61 +78,54 @@ Security = namedtuple("Security", ["ticker", "figi_ticker", "figi", "composite_f
 
 
 def securities(identifier=None):
+    rsrc = "/securities"
     if identifier is None:
-        rsrc = "/securities"
-        results = _get_all(rsrc, shape=SecurityIndex)
+        results = _get_all(rsrc, {}, shape=SecurityIndex)
     else:
-        rsrc = "/securities?identifier={}".format(identifier)
-        results = _get_all(rsrc, shape=Security)
+        results = _get_all(rsrc, {"identifier": identifier}, shape=Security)
     return results
 
 
 # ---------------------------------------------------------------
 
-# TODO: avoid duplicate fields
-# TODO: not to mention we are not using these namedtuples anywhere
-APIInfo = namedtuple('APIInfo',
-                     ['result_count', 'current_page', 'total_pages', 'page_size', 'api_call_credits', 'data'])
-
-APIInfo_for_historical = namedtuple('APIInfo',
-                                    ['result_count', 'current_page', 'total_pages', 'page_size', 'api_call_credits',
-                                     'data',
-                                     'identifier', 'item'])
+max_pages = None
 
 
-def _get(resource, page=1):  # TODO: make it page_number to match API
+def _get(resource, params, page=1):
     # TODO : don't open the keys file on every page get
     # TODO : move implementation into separate get_auth() function
     with open("keys.json") as f:
         keys = json.load(f)['intrinio']
     my_auth = HTTPBasicAuth(username=keys['user'], password=keys['pass'])
 
-    uri = "https://api.intrinio.com{}".format(resource)
+    d = dict(page_number=page)
+    if len(params) > 0:
+        d.update(params)
+    query = "?" + urllib.urlencode(d)
+
+    uri = "https://api.intrinio.com{}{}".format(resource, query)
     r = requests.get(uri, auth=my_auth)
     return r.json()
 
 
-def _get_all(resource, shape, meta=None):
-    if meta is None:
-        meta = APIInfo
+def _get_all(resource, params, shape):
     results = []
+    # f = open("raw.text", "w")
     cur_page = 1
     total_pages = 1
+    # print(resource)
     while cur_page <= total_pages:
-        js = _get(resource, page=cur_page)
-        print(json.dumps(js))
+        js = _get(resource, params, cur_page)
+        # f.write(json.dumps(js)+"\n")
 
-        # info = meta(**js)   # TODO: better name for meta
-        # total_pages = info.total_pages        # FIXME multipage
-
-        paged = "total_pages" in js.keys()
-        if paged:
-            results.extend(map(lambda s: shape(**s), js["data"]))
-        else:
+        total_pages = js.get("total_pages")
+        if total_pages is None:
             return shape(**js)
+        else:
+            results.extend(map(lambda s: shape(**s), js["data"]))
+            cur_page += 1
+            if max_pages is not None:
+                total_pages = min(total_pages, max_pages)
+            print("Total results:", len(results), js["result_count"])
 
-        cur_page += 1
-
-    if paged:
-        print("Total results:", js["result_count"], len(results))
     return results
