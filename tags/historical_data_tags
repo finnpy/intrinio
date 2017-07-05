@@ -1,0 +1,365 @@
+52 Week High	52_week_high	current	prices	usdpershare
+52 Week Low	52_week_low	current	prices	usdpershare
+Accounts Payable	accountspayable	balance_sheet	operating	usd
+Accounts Payable Turnover	apturnover	calculations	efficiency	float
+Accounts Receivable	accountsreceivable	balance_sheet	operating	usd
+Accounts Receivable Turnover	arturnover	calculations	efficiency	float
+Accrued Expenses	accruedexpenses	balance_sheet	operating	usd
+Accrued Interest Payable	accruedinterestpayable	balance_sheet	operating	usd
+Accrued Investment Income	accruedinvestmentincome	balance_sheet	operating	usd
+Accumulated Depreciation	accumulateddepreciation	balance_sheet		usd
+Accumulated Other Comprehensive Income / (Loss)	aoci	balance_sheet		usd
+Acquisitions	acquisitions	cash_flow_statement		usd
+Adjusted Close Price	adj_close_price	current	prices	usdpershare
+Adjusted High Price	adj_high_price	current	prices	usdpershare
+Adjusted Low Price	adj_low_price	current	prices	usdpershare
+Adjusted Open Price	adj_open_price	current	prices	usdpershare
+Adjusted Volume	adj_volume	current	prices	shares
+Allowance for Loan and Lease Losses	allowanceforloanandleaselosses	balance_sheet		usd
+Altman Z-Score	altmanzscore	calculations	solvency	float
+Amortization Expense	amortizationexpense	income_statement	operating	usd
+Amortization of Deferred Policy Acquisition Costs	amortizationofdeferredpolicyacquisitioncosts	income_statement	operating	usd
+Ask Price	ask_price	current	prices	usdpershare
+Asset Retirement Reserve & Litigation Obligation	assetretirementandlitigationobligation	balance_sheet	operating	usd
+Asset Turnover	assetturnover	calculations	efficiency	float
+Augmented Payout Ratio	augmentedpayoutratio	calculations	effectiveness	percentage
+Average Daily Volume	average_daily_volume	current	short_interest	shares
+Bankers Acceptance Outstanding	bankersacceptances	balance_sheet	operating	usd
+Basic & Diluted Earnings per Share	basicdilutedeps	income_statement		usdpershare
+Basic Earnings per Share	basiceps	income_statement		usdpershare
+Beta	beta	current	info	float
+Bid Price	bid_price	current	prices	usdpershare
+Book Value per Share	bookvaluepershare	calculations	metric	usdpershare
+Capital Expenditures (CapEx)	capex	calculations	metric	usd
+Capital Lease Obligations	capitalleaseobligations	balance_sheet	nonoperating	usd
+Capitalized Lease Obligations Interest Expense	capitalizedleaseobligationinterestexpense	income_statement	operating	usd
+Cash & Equivalents	cashandequivalents	balance_sheet	operating	usd
+Cash Conversion Cycle (CCC)	ccc	calculations	efficiency	days
+Cash Dividends to Common per Share	cashdividendspershare	income_statement		usdpershare
+Cash Income Taxes Paid	cashincometaxespaid	cash_flow_statement		usd
+Cash Interest Paid	cashinterestpaid	cash_flow_statement		usd
+Cash Interest Received	cashinterestreceived	cash_flow_statement		usd
+Cash Return on Invested Capital (CROIC)	croic	calculations	effectiveness	percentage
+Change in Price	change	current	prices	usdpershare
+Changes in Operating Assets and Liabilities, net	increasedecreaseinoperatingcapital	cash_flow_statement		usd
+Claims and Claim Expense	claimsandclaimexpenses	balance_sheet	operating	usd
+Close Price	close_price	current	prices	usdpershare
+Commitments & Contingencies	commitmentsandcontingencies	balance_sheet	operating	usd
+Common Equity to Total Capital	commontocap	calculations	capital_structure	percentage
+Common Stock	commonequity	balance_sheet		usd
+Compound Leverage Factor	compoundleveragefactor	calculations	leverage	float
+Consolidated Net Income / (Loss)	netincome	income_statement		usd
+Cost of Revenue to Revenue	costofrevtorevenue	calculations	profitability	percentage
+Current and Future Benefits	currentandfuturebenefits	income_statement	operating	usd
+Current Deferred & Payable Income Tax Liabilities	currentdeferredtaxliabilities	balance_sheet	operating	usd
+Current Deferred & Refundable Income Taxes	currentdeferredtaxassets	balance_sheet	operating	usd
+Current Deferred Revenue	currentdeferredrevenue	balance_sheet	operating	usd
+Current Employee Benefit Liabilities	currentemployeebenefitliabilities	balance_sheet	operating	usd
+Current Ratio	currentratio	calculations	liquidity	float
+Current Year Forecasted Earnings Yield	currentyearearningsyield	current	valuation	multiple
+Customer and Other Receivables	customerandotherreceivables	balance_sheet	operating	usd
+Customer Deposits	customerdeposits	balance_sheet	operating	usd
+Days Inventory Outstanding (DIO)	dio	calculations	efficiency	days
+Days Payable Outstanding (DPO)	dpo	calculations	efficiency	days
+Days Sales Outstanding (DSO)	dso	calculations	efficiency	days
+Days to Cover	days_to_cover	current	short_interest	days
+Debt to Equity	debttoebitda	calculations	leverage	float
+Debt to Equity	debttoequity	calculations	leverage	float
+Debt to NOPAT	debttonopat	calculations	solvency	float
+Debt to Total Capital	debttototalcapital	calculations	capital_structure	percentage
+Debt-free Net Working Capital (DFNWC)	dfnwc	calculations	metric	usd
+Debt-free Net Working Capital to Revenue	dfnwctorev	calculations	liquidity	percentage
+Debt-free, Cash-free Net Working Capital (DFCFNWC)	dfcfnwc	calculations	metric	usd
+Debt-free, Cash-free Net Working Capital to Revenue	dfcfnwctorev	calculations	liquidity	percentage
+Deferred Acquisition Cost	deferredacquisitioncost	balance_sheet	operating	usd
+Depletion Expense	depletionexpense	income_statement	operating	usd
+Deposits and Money Market Investments Interest Income	depositsinterestincome	income_statement	operating	usd
+Deposits Interest Expense	depositsinterestexpense	income_statement	operating	usd
+Depreciation Expense	depreciationexpense	income_statement	operating	usd
+Diluted Earnings per Share	dilutedeps	income_statement		usdpershare
+Divestitures	divestitures	cash_flow_statement		usd
+Dividend Payout Ratio	divpayoutratio	calculations	effectiveness	percentage
+Dividend per Share	dividend	current	dividend	usdpershare
+Dividend Yield	dividendyield	calculations	valuation	percentage
+Dividends Payable	dividendspayable	balance_sheet	nonoperating	usd
+Earnings before Interest and Taxes (EBIT)	ebit	calculations	metric	usd
+Earnings before Interest, Taxes, Depreciation and Amortization (EBITDA)	ebitda	calculations	metric	usd
+Earnings Yield	earningsyield	calculations	valuation	percentage
+EBIT Growth	ebitgrowth	calculations	growth	percentage
+EBIT Less CapEx to Interest Expense	ebitlesscapextointerestex	calculations	coverage	float
+EBIT Margin	ebitmargin	calculations	profitability	percentage
+EBIT Q/Q Growth	ebitqoqgrowth	calculations	growth	percentage
+EBIT to Interest Expense	ebittointerestex	calculations	coverage	float
+EBITDA Growth	ebitdagrowth	calculations	growth	percentage
+EBITDA Margin	ebitdamargin	calculations	profitability	percentage
+EBITDA Q/Q Growth	ebitdaqoqgrowth	calculations	growth	percentage
+Effect of Exchange Rate Changes	effectofexchangeratechanges	cash_flow_statement		usd
+Effective Tax Rate	efftaxrate	calculations	profitability	percentage
+Employee Benefit Assets	employeebenefitassets	balance_sheet	operating	usd
+Enterprise Value (EV)	enterprisevalue	calculations	valuation	usd
+Enterprise Value to Current Year Forecasted Revenue	evtocurrentyearrevenue	current	valuation	multiple
+Enterprise Value to Current Year Forecasted Revenue	evtonextyearrevenue	current	valuation	multiple
+Enterprise Value to EBIT (EV/EBIT)	evtoebit	calculations	valuation	multiple
+Enterprise Value to EBITDA (EV/EBITDA)	evtoebitda	calculations	valuation	multiple
+Enterprise Value to Free Cash Flow (EV/FCFF)	evtofcff	calculations	valuation	multiple
+Enterprise Value to Invested Capital (EV/IC)	evtoinvestedcapital	calculations	valuation	multiple
+Enterprise Value to NOPAT (EV/NOPAT)	evtonopat	calculations	valuation	multiple
+Enterprise Value to Operating Cash Flow (EV/OCF)	evtoocf	calculations	valuation	multiple
+Enterprise Value to Revenue (EV/Rev)	evtorevenue	calculations	valuation	multiple
+EPS Growth	epsgrowth	calculations	growth	percentage
+EPS Q/Q Growth	epsqoqgrowth	calculations	growth	percentage
+Ex Dividend	ex_dividend	current	prices	float
+Exploration Expense	explorationexpense	income_statement	operating	usd
+Extraordinary Income / (Loss), net	extraordinaryincome	income_statement	nonoperating	usd
+Federal Funds Purchased and Securities Sold	fedfundspurchased	balance_sheet	operating	usd
+Federal Funds Purchased and Securities Sold Interest Expense	fedfundsandrepointerestexpense	income_statement	operating	usd
+Federal Funds Sold	fedfundssold	balance_sheet	operating	usd
+Federal Funds Sold and Securities Borrowed Interest Income	fedfundsandrepointerestincome	income_statement	operating	usd
+Financial Leverage	finleverage	calculations	leverage	float
+Five Year Average Dividend Yield	five_yr_ave_dividend_yield	current	dividend	percentage
+Five Year Monthly Beta	five_yr_monthly_beta	current	betas	float
+Five Year Weekly Beta	five_yr_weekly_beta	current	betas	float
+Fixed Asset Turnover	faturnover	calculations	efficiency	float
+Forward Dividend Rate	forward_dividend_rate	current	dividend	usdpershare
+Forward Dividend Yield	forward_dividend_yield	current	dividend	percentage
+Free Cash Flow Firm Growth	fcffgrowth	calculations	growth	percentage
+Free Cash Flow Firm Q/Q Growth	fcffqoqgrowth	calculations	growth	percentage
+Free Cash Flow to Firm (FCFF)	freecashflow	calculations	metric	usd
+Free Cash Flow to Firm to Interest Expense	fcfftointerestex	calculations	coverage	float
+Future Policy Benefits	futurepolicybenefits	balance_sheet	operating	usd
+Goodwill	goodwill	balance_sheet	operating	usd
+Gross Margin	grossmargin	calculations	profitability	percentage
+High Price	high_price	current	prices	usdpershare
+Impairment Charge	impairmentexpense	income_statement	operating	usd
+Income Tax Expense	incometaxexpense	income_statement		usd
+Increase / (Decrease) in Invested Capital	investedcapitalincreasedecrease	calculations	metric	usd
+Insurance Policy Acquisition Costs	policyacquisitioncosts	income_statement	operating	usd
+Intangible Assets	intangibleassets	balance_sheet	operating	usd
+Interest & Investment Income	totalinterestincome	income_statement	nonoperating	usd
+Interest Bearing Deposits	interestbearingdeposits	balance_sheet	operating	usd
+Interest Bearing Deposits at Other Banks	interestbearingdepositsatotherbanks	balance_sheet	operating	usd
+Interest Burden Percent	interestburdenpct	calculations	profitability	percentage
+Interest Expense	totalinterestexpense	income_statement	nonoperating	usd
+Inventories, net	netinventory	balance_sheet	operating	usd
+Inventory Turnover	invturnover	calculations	efficiency	float
+Invested Capital	investedcapital	calculations	metric	usd
+Invested Capital Growth	investedcapitalgrowth	calculations	growth	percentage
+Invested Capital Q/Q Growth	investedcapitalqoqgrowth	calculations	growth	percentage
+Invested Capital Turnover	investedcapitalturnover	calculations	efficiency	float
+Investment Banking Income	investmentbankingincome	income_statement	operating	usd
+Investment Securities Interest Income	investmentsecuritiesinterestincome	income_statement	operating	usd
+Issuance of Common Equity	issuanceofcommonequity	cash_flow_statement		usd
+Issuance of Debt	issuanceofdebt	cash_flow_statement		usd
+Issuance of Preferred Equity	issuanceofpreferredequity	cash_flow_statement		usd
+Leverage Ratio	leverageratio	calculations	leverage	float
+Loans and Leases	loansandleases	balance_sheet		usd
+Loans and Leases Interest Income	loansandleaseinterestincome	income_statement	operating	usd
+Loans and Leases, Net of Allowance	netloansandleases	balance_sheet	operating	usd
+Loans Held for Sale	loansheldforsale	balance_sheet	operating	usd
+Loans Held for Sale, Net	loansheldforsalenet	cash_flow_statement		usd
+Long-Term Debt	longtermdebt	balance_sheet	nonoperating	usd
+Long-Term Debt Interest Expense	longtermdebtinterestexpense	income_statement	operating	usd
+Long-Term Debt to EBITDA	ltdebttoebitda	calculations	solvency	float
+Long-Term Debt to Equity	ltdebttoequity	calculations	leverage	float
+Long-Term Debt to NOPAT	ltdebttonopat	calculations	solvency	float
+Long-Term Debt to Total Capital	ltdebttocap	calculations	capital_structure	percentage
+Long-Term Investments	longterminvestments	balance_sheet	nonoperating	usd
+Low Price	low_price	current	prices	usdpershare
+Market Capitalization	marketcap	calculations	valuation	usd
+Marketing Expense	marketingexpense	income_statement	operating	usd
+Mortgage Servicing Rights	mortgageservicingrights	balance_sheet	operating	usd
+Net Cash From Continuing Financing Activities	netcashfromcontinuingfinancingactivities	cash_flow_statement		usd
+Net Cash From Continuing Investing Activities	netcashfromcontinuinginvestingactivities	cash_flow_statement		usd
+Net Cash From Continuing Operating Activities	netcashfromcontinuingoperatingactivities	cash_flow_statement		usd
+Net Cash From Discontinued Financing Activities	netcashfromdiscontinuedfinancingactivities	cash_flow_statement		usd
+Net Cash From Discontinued Investing Activities	netcashfromdiscontinuedinvestingactivities	cash_flow_statement		usd
+Net Cash From Discontinued Operating Activities	netcashfromdiscontinuedoperatingactivities	cash_flow_statement		usd
+Net Cash From Financing Activities	netcashfromfinancingactivities	cash_flow_statement		usd
+Net Cash From Investing Activities	netcashfrominvestingactivities	cash_flow_statement		usd
+Net Cash From Operating Activities	netcashfromoperatingactivities	cash_flow_statement		usd
+Net Change in Cash & Equivalents	netchangeincash	cash_flow_statement		usd
+Net Change in Deposits	netchangeindeposits	cash_flow_statement		usd
+Net Debt	netdebt	calculations	metric	usd
+Net Debt to EBITDA	netdebttoebitda	calculations	solvency	float
+Net Debt to NOPAT	netdebttonopat	calculations	solvency	float
+Net Income / (Loss) Attributable to Common Shareholders	netincometocommon	income_statement		usd
+Net Income / (Loss) Attributable to Noncontrolling Interest	netincometononcontrollinginterest	income_statement		usd
+Net Income / (Loss) Continuing Operations	netincomecontinuing	income_statement		usd
+Net Income / (Loss) Discontinued Operations	netincomediscontinued	income_statement		usd
+Net Income Growth	netincomegrowth	calculations	growth	percentage
+Net Income Q/Q Growth	netincomeqoqgrowth	calculations	growth	percentage
+Net Increase in Fed Funds Sold	netincreaseinfedfundssold	cash_flow_statement		usd
+Net Interest Income / (Expense)	netinterestincome	income_statement		usd
+Net Nonoperating Expense (NNE)	netnonopex	calculations	metric	usd
+Net Nonoperating Expense Percent (NNEP)	nnep	calculations	effectiveness	percentage
+Net Nonoperating Obligations (NNO)	netnonopobligations	calculations	metric	usd
+Net Occupancy & Equipment Expense	netoccupancyequipmentexpense	income_statement	operating	usd
+Net Operating Profit after Tax (NOPAT)	nopat	calculations	metric	usd
+Net Realized & Unrealized Capital Gains on Investments	netrealizedcapitalgains	income_statement	operating	usd
+Net Working Capital (NWC)	nwc	calculations	metric	usd
+Net Working Capital to Revenue	nwctorev	calculations	liquidity	percentage
+Next Year Forecasted Earnings Yield	nextyearearningsyield	current	valuation	multiple
+Non-Cash Adjustments To Reconcile Net Income	noncashadjustmentstonetincome	cash_flow_statement		usd
+Non-Interest Bearing Deposits	noninterestbearingdeposits	balance_sheet	operating	usd
+Noncontrolling Interest	noncontrollinginterests	balance_sheet		usd
+Noncontrolling Interest Sharing Ratio	noncontrollinginterestsharingratio	calculations	effectiveness	percentage
+Noncontrolling Interests to Total Capital	noncontrolinttocap	calculations	capital_structure	percentage
+Noncurrent Deferred & Payable Income Tax Liabilities	noncurrentdeferredtaxliabilities	balance_sheet	operating	usd
+Noncurrent Deferred & Refundable Income Taxes	noncurrentdeferredtaxassets	balance_sheet	operating	usd
+Noncurrent Deferred Revenue	noncurrentdeferredrevenue	balance_sheet	operating	usd
+Noncurrent Employee Benefit Liabilities	noncurrentemployeebenefitliabilities	balance_sheet	operating	usd
+Noncurrent Note & Lease Receivables	noncurrentnotereceivables	balance_sheet	operating	usd
+Nonoperating Income / (Expense), net	nonoperatingincome	income_statement	nonoperating	usd
+NOPAT Growth	nopatgrowth	calculations	growth	percentage
+NOPAT Less CapEx to Interest Expense	nopatlesscapextointex	calculations	coverage	float
+NOPAT Margin	nopatmargin	calculations	profitability	percentage
+NOPAT Q/Q Growth	nopatqoqgrowth	calculations	growth	percentage
+NOPAT to Interest Expense	nopattointerestex	calculations	coverage	float
+Normalized Net Operating Profit after Tax (NOPAT)	normalizednopat	calculations	metric	usd
+Normalized NOPAT Margin	normalizednopatmargin	calculations	profitability	percentage
+Note & Lease Receivable	notereceivable	balance_sheet	operating	usd
+One Year Monthly Beta	one_yr_monthly_beta	current	betas	float
+One Year Weekly Beta	one_yr_weekly_beta	current	betas	float
+Open Price	open_price	current	prices	usdpershare
+Operating Cash Flow Growth	ocfgrowth	calculations	growth	percentage
+Operating Cash Flow Less CapEx to Interest Expense	ocflesscapextointerestex	calculations	coverage	float
+Operating Cash Flow Q/Q Growth	ocfqoqgrowth	calculations	growth	percentage
+Operating Cash Flow to CapEx	ocftocapex	calculations	effectiveness	percentage
+Operating Cash Flow to Interest Expense	ocftointerestex	calculations	coverage	float
+Operating Cost of Revenue	operatingcostofrevenue	income_statement	operating	usd
+Operating Expenses to Revenue	opextorevenue	calculations	profitability	percentage
+Operating Margin	operatingmargin	calculations	profitability	percentage
+Operating Return on Assets (OROA)	oroa	calculations	effectiveness	percentage
+Operating Revenue	operatingrevenue	income_statement	operating	usd
+Other Adjustments to Consolidated Net Income / (Loss)	otheradjustmentstoconsolidatednetincome	income_statement		usd
+Other Adjustments to Net Income / (Loss) Attributable to Common Shareholders)	otheradjustmentstonetincometocommon	income_statement		usd
+Other Assets	otherassets	balance_sheet	operating	usd
+Other Cost of Revenue	othercostofrevenue	income_statement	operating	usd
+Other Current Assets	othercurrentassets	balance_sheet	operating	usd
+Other Current Liabilities	othercurrentliabilities	balance_sheet	operating	usd
+Other Current Nonoperating Assets	othercurrentnonoperatingassets	balance_sheet	nonoperating	usd
+Other Current Nonoperating Liabilities	othercurrentnonoperatingliabilities	balance_sheet	nonoperating	usd
+Other Equity Adjustments	otherequity	balance_sheet		usd
+Other Financing Activities, net	otherfinancingactivitiesnet	cash_flow_statement		usd
+Other Gains / (Losses), net	othergains	income_statement	nonoperating	usd
+Other Income / (Expense), net	otherincome	income_statement	nonoperating	usd
+Other Interest Expense	otherinterestexpense	income_statement	operating	usd
+Other Interest Income	otherinterestincome	income_statement	operating	usd
+Other Investing Activities, net	otherinvestingactivitiesnet	cash_flow_statement		usd
+Other Long-Term Liabilities	otherlongtermliabilities	balance_sheet	operating	usd
+Other Net Changes in Cash	othernetchangesincash	cash_flow_statement		usd
+Other Non-Interest Income	othernoninterestincome	income_statement	operating	usd
+Other Noncurrent Nonoperating Assets	othernoncurrentnonoperatingassets	balance_sheet	nonoperating	usd
+Other Noncurrent Nonoperating Liabilities	othernoncurrentnonoperatingliabilities	balance_sheet	nonoperating	usd
+Other Noncurrent Operating Assets	othernoncurrentassets	balance_sheet	operating	usd
+Other Noncurrent Operating Liabilities	othernoncurrentliabilities	balance_sheet	operating	usd
+Other Operating Expenses / (Income)	otheroperatingexpenses	income_statement	operating	usd
+Other Revenue	otherrevenue	income_statement	operating	usd
+Other Service Charges	otherservicechargeincome	income_statement	operating	usd
+Other Short-Term Payables	othershorttermpayables	balance_sheet	operating	usd
+Other Special Charges / (Income)	otherspecialcharges	income_statement	operating	usd
+Other Taxes Payable	othertaxespayable	balance_sheet	operating	usd
+Participating Policy Holder Equity	participatingpolicyholderequity	balance_sheet	operating	usd
+Payment of Dividends	paymentofdividends	cash_flow_statement		usd
+Percent Change in Price	percent_change	current	prices	percentage
+Plant, Property & Equipment, gross	grossppe	balance_sheet		usd
+Plant, Property, & Equipment, net	netppe	balance_sheet	operating	usd
+Policy Holder Funds	policyholderfunds	balance_sheet	operating	usd
+Pre Tax Income Margin	pretaxincomemargin	calculations	profitability	percentage
+Preferred Equity to Total Capital	preferredtocap	calculations	capital_structure	percentage
+Preferred Stock	totalpreferredequity	balance_sheet		usd
+Preferred Stock Dividends Declared	preferreddividends	income_statement		usd
+Premises and Equipment, Net	netpremisesandequipment	balance_sheet	operating	usd
+Premiums Earned	premiumsearned	income_statement	operating	usd
+Prepaid Expenses	prepaidexpenses	balance_sheet	operating	usd
+Price Date	price_date	current	prices	date
+Price to Book Value (P/BV)	pricetobook	calculations	valuation	multiple
+Price to Current Year Forecasted Earnings	pricetocurrentyearearnings	current	valuation	multiple
+Price to Current Year Forecasted Revenue	pricetocurrentyearrevenue	current	valuation	multiple
+Price to Earnings (P/E)	pricetoearnings	calculations	valuation	multiple
+Price to Next Year Forecasted Earnings	pricetonextyearearnings	current	valuation	multiple
+Price to Next Year Forecasted Revenue	pricetonextyearrevenue	current	valuation	multiple
+Price to Revenue (P/Rev)	pricetorevenue	calculations	valuation	multiple
+Price to Tangible Book Value (P/TBV)	pricetotangiblebook	calculations	valuation	multiple
+Profit (Net Income) Margin	profitmargin	calculations	profitability	percentage
+Property & Liability Insurance Claims	propertyliabilityinsuranceclaims	income_statement	operating	usd
+Provision for Credit Losses	provisionforcreditlosses	income_statement	operating	usd
+Provision For Loan Losses	provisionforloanlosses	cash_flow_statement		usd
+Purchase of Investments	purchaseofinvestments	cash_flow_statement		usd
+Purchase of Property, Plant & Equipment	purchaseofplantpropertyandequipment	cash_flow_statement		usd
+Quick Ratio	quickratio	calculations	liquidity	float
+R&D to Revenue	rdextorevenue	calculations	profitability	percentage
+Redeemable Noncontrolling Interest	redeemablenoncontrollinginterest	balance_sheet		usd
+Repayment of Debt	repaymentofdebt	cash_flow_statement		usd
+Repurchase of Common Equity	repurchaseofcommonequity	cash_flow_statement		usd
+Repurchase of Preferred Equity	repurchaseofpreferredequity	cash_flow_statement		usd
+Research & Development Expense	rdexpense	income_statement	operating	usd
+Restricted Cash	restrictedcash	balance_sheet	operating	usd
+Restructuring Charge	restructuringcharge	income_statement	operating	usd
+Retained Earnings	retainedearnings	balance_sheet		usd
+Return on Assets (ROA)	roa	calculations	effectiveness	percentage
+Return on Common Equity (ROCE)	roce	calculations	effectiveness	percentage
+Return on Equity (ROE)	roe	calculations	effectiveness	percentage
+Return on Invested Capital (ROIC)	roic	calculations	effectiveness	percentage
+Return on Net Nonoperating Assets (RNNOA)	rnnoa	calculations	effectiveness	percentage
+Revenue Growth	revenuegrowth	calculations	growth	percentage
+Revenue Q/Q Growth	revenueqoqgrowth	calculations	growth	percentage
+ROIC Less NNEP Spread (ROIC-NNEP)	roicnnepspread	calculations	effectiveness	percentage
+Salaries and Employee Benefits	salariesandemployeebenefitsexpense	income_statement	operating	usd
+Sale and/or Maturity of Investments	saleofinvestments	cash_flow_statement		usd
+Sale of Property, Plant & Equipment	saleofplantpropertyandequipment	cash_flow_statement		usd
+Selling, General & Admin Expense	sgaexpense	income_statement	operating	usd
+Separate Account Business Assets	separateaccountbusinessassets	balance_sheet	operating	usd
+Separate Account Business Liabilities	separateaccountbusinessliabilities	balance_sheet	operating	usd
+Service Charges on Deposit Accounts	servicechargesondepositsincome	income_statement	operating	usd
+Seven Year Monthly Beta	seven_yr_monthly_beta	current	betas	float
+Seven Year Weekly Beta	seven_yr_weekly_beta	current	betas	float
+SG&A Expenses to Revenue	sgaextorevenue	calculations	profitability	percentage
+Short Interest	short_interest	current	short_interest	shares
+Short-Term Borrowings Interest Expense	shorttermborrowinginterestexpense	income_statement	operating	usd
+Short-Term Debt	shorttermdebt	balance_sheet	nonoperating	usd
+Short-Term Debt to Total Capital	stdebttocap	calculations	capital_structure	percentage
+Short-Term Investments	shortterminvestments	balance_sheet	nonoperating	usd
+Split Ratio	split_ratio	current	prices	float
+Tangible Book Value per Share	tangbookvaluepershare	calculations	metric	usdpershare
+Tax Burden Percent	taxburdenpct	calculations	profitability	percentage
+Ten Year Monthly Beta	ten_yr_monthly_beta	current	betas	float
+Ten Year Weekly Beta	ten_yr_weekly_beta	current	betas	float
+Three Year Monthly Beta	three_yr_monthly_beta	current	betas	float
+Three Year Weekly Beta	three_yr_weekly_beta	current	betas	float
+Time Deposits Placed and Other Short-Term Investments	timedepositsplaced	balance_sheet	operating	usd
+Total Assets	totalassets	balance_sheet		usd
+Total Capital	totalcapital	calculations	metric	usd
+Total Common Equity	totalcommonequity	balance_sheet		usd
+Total Cost of Revenue	totalcostofrevenue	income_statement		usd
+Total Current Assets	totalcurrentassets	balance_sheet		usd
+Total Current Liabilities	totalcurrentliabilities	balance_sheet		usd
+Total Debt	debt	calculations	metric	usd
+Total Depreciation and Amortization (D&A)	depreciationandamortization	calculations	metric	usd
+Total Equity & Noncontrolling Interests	totalequityandnoncontrollinginterests	balance_sheet		usd
+Total Gross Profit	totalgrossprofit	income_statement		usd
+Total Liabilities	totalliabilities	balance_sheet		usd
+Total Liabilities & Shareholders’ Equity	totalliabilitiesandequity	balance_sheet		usd
+Total Long-Term Debt	ltdebtandcapleases	calculations	metric	usd
+Total Non-Interest Expense	totalnoninterestexpense	income_statement		usd
+Total Non-Interest Income	totalnoninterestincome	income_statement		usd
+Total Noncurrent Assets	totalnoncurrentassets	balance_sheet		usd
+Total Noncurrent Liabilities	totalnoncurrentliabilities	balance_sheet		usd
+Total Operating Expenses	totaloperatingexpenses	income_statement		usd
+Total Operating Income	totaloperatingincome	income_statement		usd
+Total Other Income / (Expense), net	totalotherincome	income_statement		usd
+Total Pre-Tax Income	totalpretaxincome	income_statement		usd
+Total Preferred & Common Equity	totalequity	balance_sheet		usd
+Total Revenue	totalrevenue	income_statement		usd
+Trading Account Interest Income	tradingaccountinterestincome	income_statement	operating	usd
+Trading Account Securities	tradingaccountsecurities	balance_sheet	operating	usd
+Trailing Dividend Rate	dividend_rate	current	dividend	usdpershare
+Trailing Dividend Yield	trailing_dividend_yield	current	dividend	percentage
+Treasury Stock	treasurystock	balance_sheet		usd
+Trust Fees by Commissions	trustfeeincome	income_statement	operating	usd
+Unearned Premiums Asset	unearnedpremiumsdebit	balance_sheet	operating	usd
+Unearned Premiums Liability	unearnedpremiumscredit	balance_sheet	operating	usd
+Volume	volume	current	prices	shares
+Weighted Average Basic & Diluted Shares Outstanding	weightedavebasicdilutedsharesos	income_statement		shares
+Weighted Average Basic Shares Outstanding	weightedavebasicsharesos	income_statement		shares
+Weighted Average Diluted Shares Outstanding	weightedavedilutedsharesos	income_statement		shares

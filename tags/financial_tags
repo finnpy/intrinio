@@ -1,0 +1,250 @@
+Loans and Leases Interest Income	loansandleaseinterestincome	income_statement	financial	credit	income_statement_metric	usd	1
+Investment Securities Interest Income	investmentsecuritiesinterestincome	income_statement	financial	credit	income_statement_metric	usd	2
+Deposits and Money Market Investments Interest Income	depositsinterestincome	income_statement	financial	credit	income_statement_metric	usd	3
+Federal Funds Sold and Securities Borrowed Interest Income	fedfundsandrepointerestincome	income_statement	financial	credit	income_statement_metric	usd	4
+Trading Account Interest Income	tradingaccountinterestincome	income_statement	financial	credit	income_statement_metric	usd	5
+Other Interest Income	otherinterestincome	income_statement	financial	credit	income_statement_metric	usd	6
+Total Interest Income	totalinterestincome	income_statement	financial	credit	income_statement_metric	usd	7
+Deposits Interest Expense	depositsinterestexpense	income_statement	financial	debit	income_statement_metric	usd	8
+Short-Term Borrowings Interest Expense	shorttermborrowinginterestexpense	income_statement	financial	debit	income_statement_metric	usd	9
+Long-Term Debt Interest Expense	longtermdebtinterestexpense	income_statement	financial	debit	income_statement_metric	usd	10
+Federal Funds Purchased and Securities Sold Interest Expense	fedfundsandrepointerestexpense	income_statement	financial	debit	income_statement_metric	usd	11
+Capitalized Lease Obligations Interest Expense	capitalizedleaseobligationinterestexpense	income_statement	financial	debit	income_statement_metric	usd	12
+Other Interest Expense	otherinterestexpense	income_statement	financial	debit	income_statement_metric	usd	13
+Total Interest Expense	totalinterestexpense	income_statement	financial	debit	income_statement_metric	usd	14
+Net Interest Income / (Expense)	netinterestincome	income_statement	financial	credit	income_statement_metric	usd	15
+Trust Fees by Commissions	trustfeeincome	income_statement	financial	credit	income_statement_metric	usd	16
+Service Charges on Deposit Accounts	servicechargesondepositsincome	income_statement	financial	credit	income_statement_metric	usd	17
+Other Service Charges	otherservicechargeincome	income_statement	financial	credit	income_statement_metric	usd	18
+Net Realized & Unrealized Capital Gains on Investments	netrealizedcapitalgains	income_statement	financial	credit	income_statement_metric	usd	19
+Premiums Earned	premiumsearned	income_statement	financial	credit	income_statement_metric	usd	20
+Investment Banking Income	investmentbankingincome	income_statement	financial	credit	income_statement_metric	usd	21
+Other Non-Interest Income	othernoninterestincome	income_statement	financial	credit	income_statement_metric	usd	22
+Total Non-Interest Income	totalnoninterestincome	income_statement	financial	credit	income_statement_metric	usd	23
+Total Revenue	totalrevenue	income_statement	financial	credit	income_statement_metric	usd	24
+Provision for Credit Losses	provisionforcreditlosses	income_statement	financial	debit	income_statement_metric	usd	25
+Salaries and Employee Benefits	salariesandemployeebenefitsexpense	income_statement	financial	debit	income_statement_metric	usd	26
+Net Occupancy & Equipment Expense	netoccupancyequipmentexpense	income_statement	financial	debit	income_statement_metric	usd	27
+Marketing Expense	marketingexpense	income_statement	financial	debit	income_statement_metric	usd	28
+Property & Liability Insurance Claims	propertyliabilityinsuranceclaims	income_statement	financial	debit	income_statement_metric	usd	29
+Insurance Policy Acquisition Costs	policyacquisitioncosts	income_statement	financial	debit	income_statement_metric	usd	30
+Amortization of Deferred Policy Acquisition Costs	amortizationofdeferredpolicyacquisitioncosts	income_statement	financial	debit	income_statement_metric	usd	31
+Current and Future Benefits	currentandfuturebenefits	income_statement	financial	debit	income_statement_metric	usd	32
+Other Operating Expenses	otheroperatingexpenses	income_statement	financial	debit	income_statement_metric	usd	33
+Depreciation Expense	depreciationexpense	income_statement	financial	debit	income_statement_metric	usd	34
+Amortization Expense	amortizationexpense	income_statement	financial	debit	income_statement_metric	usd	35
+Impairment Charge	impairmentexpense	income_statement	financial	debit	income_statement_metric	usd	36
+Restructuring Charge	restructuringcharge	income_statement	financial	debit	income_statement_metric	usd	37
+Other Special Charges	otherspecialcharges	income_statement	financial	debit	income_statement_metric	usd	38
+Total Non-Interest Expense	totalnoninterestexpense	income_statement	financial	debit	income_statement_metric	usd	39
+Nonoperating Income / (Expense), net	nonoperatingincome	income_statement	financial	credit	income_statement_metric	usd	40
+Total Pre-Tax Income	totalpretaxincome	income_statement	financial	credit	income_statement_metric	usd	41
+Income Tax Expense	incometaxexpense	income_statement	financial	debit	income_statement_metric	usd	42
+Other Gains / (Losses), net	othergains	income_statement	financial	credit	income_statement_metric	usd	43
+Net Income / (Loss) Continuing Operations	netincomecontinuing	income_statement	financial	credit	income_statement_metric	usd	44
+Net Income / (Loss) Discontinued Operations	netincomediscontinued	income_statement	financial	credit	income_statement_metric	usd	45
+Extraordinary Income / (Loss), net	extraordinaryincome	income_statement	financial	credit	income_statement_metric	usd	46
+Other Adjustments to Consolidated Net Income / (Loss)	otheradjustmentstoconsolidatednetincome	income_statement	financial	credit	income_statement_metric	usd	47
+Consolidated Net Income / (Loss)	netincome	income_statement	financial	credit	income_statement_metric	usd	48
+Preferred Stock Dividends Declared	preferreddividends	income_statement	financial	debit	income_statement_metric	usd	49
+Net Income / (Loss) Attributable to Noncontrolling Interest	netincometononcontrollinginterest	income_statement	financial	debit	income_statement_metric	usd	50
+Other Adjustment to Net Income / (Loss) Attributable to Common Shareholders)	otheradjustmentstonetincometocommon	income_statement	financial	debit	income_statement_metric	usd	51
+Net Income / (Loss) Attributable to Common Shareholders	netincometocommon	income_statement	financial	credit	income_statement_metric	usd	52
+Weighted Average Basic Shares Outstanding	weightedavebasicsharesos	income_statement	financial		income_statement_metric	shares	53
+Basic Earnings per Share	basiceps	income_statement	financial		income_statement_metric	usdpershare	54
+Weighted Average Diluted Shares Outstanding	weightedavedilutedsharesos	income_statement	financial		income_statement_metric	shares	55
+Diluted Earnings per Share	dilutedeps	income_statement	financial		income_statement_metric	usdpershare	56
+Cash Dividends to Common per Share	cashdividendspershare	income_statement	financial		income_statement_metric	usdpershare	57
+Cash and Due from Banks	cashandequivalents	balance_sheet	financial	debit	balance_sheet_metric	usd	1
+Restricted Cash	restrictedcash	balance_sheet	financial	debit	balance_sheet_metric	usd	2
+Federal Funds Sold	fedfundssold	balance_sheet	financial	debit	balance_sheet_metric	usd	3
+Interest Bearing Deposits at Other Banks	interestbearingdepositsatotherbanks	balance_sheet	financial	debit	balance_sheet_metric	usd	4
+Time Deposits Placed and Other Short-Term Investments	timedepositsplaced	balance_sheet	financial	debit	balance_sheet_metric	usd	5
+Trading Account Securities	tradingaccountsecurities	balance_sheet	financial	debit	balance_sheet_metric	usd	6
+Loans and Leases	loansandleases	balance_sheet	financial	debit	balance_sheet_metric	usd	7
+Allowance for Loan and Lease Losses	allowanceforloanandleaselosses	balance_sheet	financial	credit	balance_sheet_metric	usd	8
+Loans and Leases, Net of Allowance	netloansandleases	balance_sheet	financial	debit	balance_sheet_metric	usd	9
+Loans Held for Sale	loansheldforsale	balance_sheet	financial	debit	balance_sheet_metric	usd	10
+Accrued Investment Income	accruedinvestmentincome	balance_sheet	financial	debit	balance_sheet_metric	usd	11
+Customer and Other Receivables	customerandotherreceivables	balance_sheet	financial	debit	balance_sheet_metric	usd	12
+Premises and Equipment, Net	netpremisesandequipment	balance_sheet	financial	debit	balance_sheet_metric	usd	13
+Mortgage Servicing Rights	mortgageservicingrights	balance_sheet	financial	debit	balance_sheet_metric	usd	14
+Unearned Premiums Asset	unearnedpremiumsdebit	balance_sheet	financial	debit	balance_sheet_metric	usd	15
+Deferred Acquisition Cost	deferredacquisitioncost	balance_sheet	financial	debit	balance_sheet_metric	usd	16
+Separate Account Business Assets	separateaccountbusinessassets	balance_sheet	financial	debit	balance_sheet_metric	usd	17
+Goodwill	goodwill	balance_sheet	financial	debit	balance_sheet_metric	usd	18
+Intangible Assets	intangibleassets	balance_sheet	financial	debit	balance_sheet_metric	usd	19
+Other Assets	otherassets	balance_sheet	financial	debit	balance_sheet_metric	usd	20
+Total Assets	totalassets	balance_sheet	financial	debit	balance_sheet_metric	usd	21
+Non-Interest Bearing Deposits	noninterestbearingdeposits	balance_sheet	financial	credit	balance_sheet_metric	usd	22
+Interest Bearing Deposits	interestbearingdeposits	balance_sheet	financial	credit	balance_sheet_metric	usd	23
+Federal Funds Purchased and Securities Sold	fedfundspurchased	balance_sheet	financial	credit	balance_sheet_metric	usd	24
+Short-Term Debt	shorttermdebt	balance_sheet	financial	credit	balance_sheet_metric	usd	25
+Bankers Acceptance Outstanding	bankersacceptances	balance_sheet	financial	credit	balance_sheet_metric	usd	26
+Accrued Interest Payable	accruedinterestpayable	balance_sheet	financial	credit	balance_sheet_metric	usd	27
+Other Short-Term Payables	othershorttermpayables	balance_sheet	financial	credit	balance_sheet_metric	usd	28
+Long-Term Debt	longtermdebt	balance_sheet	financial	credit	balance_sheet_metric	usd	29
+Capital Lease Obligations	capitalleaseobligations	balance_sheet	financial	credit	balance_sheet_metric	usd	30
+Claims and Claim Expense	claimsandclaimexpenses	balance_sheet	financial	credit	balance_sheet_metric	usd	31
+Future Policy Benefits	futurepolicybenefits	balance_sheet	financial	credit	balance_sheet_metric	usd	32
+Unearned Premiums Liability	unearnedpremiumscredit	balance_sheet	financial	credit	balance_sheet_metric	usd	33
+Policy Holder Funds	policyholderfunds	balance_sheet	financial	credit	balance_sheet_metric	usd	34
+Participating Policy Holder Equity	participatingpolicyholderequity	balance_sheet	financial	credit	balance_sheet_metric	usd	35
+Separate Account Business Liabilities	separateaccountbusinessliabilities	balance_sheet	financial	credit	balance_sheet_metric	usd	36
+Other Long-Term Liabilities	otherlongtermliabilities	balance_sheet	financial	credit	balance_sheet_metric	usd	37
+Total Liabilities	totalliabilities	balance_sheet	financial	credit	balance_sheet_metric	usd	38
+Commitments & Contingencies	commitmentsandcontingencies	balance_sheet	financial	credit	balance_sheet_metric	usd	39
+Redeemable Noncontrolling Interest	redeemablenoncontrollinginterest	balance_sheet	financial	credit	balance_sheet_metric	usd	40
+Preferred Stock	totalpreferredequity	balance_sheet	financial	credit	balance_sheet_metric	usd	41
+Common Stock	commonequity	balance_sheet	financial	credit	balance_sheet_metric	usd	42
+Retained Earnings	retainedearnings	balance_sheet	financial	credit	balance_sheet_metric	usd	43
+Treasury Stock	treasurystock	balance_sheet	financial	credit	balance_sheet_metric	usd	44
+Accumulated Other Comprehensive Income / (Loss)	aoci	balance_sheet	financial	credit	balance_sheet_metric	usd	45
+Other Equity Adjustments	otherequity	balance_sheet	financial	credit	balance_sheet_metric	usd	46
+Total Common Equity	totalcommonequity	balance_sheet	financial	credit	balance_sheet_metric	usd	47
+Total Preferred & Common Equity	totalequity	balance_sheet	financial	credit	balance_sheet_metric	usd	48
+Noncontrolling Interest	noncontrollinginterests	balance_sheet	financial	credit	balance_sheet_metric	usd	49
+Total Equity & Noncontrolling Interests	totalequityandnoncontrollinginterests	balance_sheet	financial	credit	balance_sheet_metric	usd	50
+Total Liabilities & Shareholders’ Equity	totalliabilitiesandequity	balance_sheet	financial	credit	balance_sheet_metric	usd	51
+Consolidated Net Income / (Loss)	netincome	cash_flow_statement	financial	credit	cash_flow_statement_metric	usd	1
+Net Income / (Loss) Discontinued Operations	netincomediscontinued	cash_flow_statement	financial	credit	cash_flow_statement_metric	usd	2
+Net Income / (Loss) Continuing Operations	netincomecontinuing	cash_flow_statement	financial	credit	cash_flow_statement_metric	usd	3
+Provision For Loan Losses	provisionforloanlosses	cash_flow_statement	financial	debit	cash_flow_statement_metric	usd	4
+Depreciation Expense	depreciationexpense	cash_flow_statement	financial	debit	cash_flow_statement_metric	usd	5
+Amortization Expense	amortizationexpense	cash_flow_statement	financial	debit	cash_flow_statement_metric	usd	6
+Non-Cash Adjustments to Reconcile Net Income	noncashadjustmentstonetincome	cash_flow_statement	financial	debit	cash_flow_statement_metric	usd	7
+Changes in Operating Assets and Liabilities, net	increasedecreaseinoperatingcapital	cash_flow_statement	financial	debit	cash_flow_statement_metric	usd	8
+Net Cash From Continuing Operating Activities	netcashfromcontinuingoperatingactivities	cash_flow_statement	financial	debit	cash_flow_statement_metric	usd	9
+Net Cash From Discontinued Operating Activities	netcashfromdiscontinuedoperatingactivities	cash_flow_statement	financial	debit	cash_flow_statement_metric	usd	10
+Net Cash From Operating Activities	netcashfromoperatingactivities	cash_flow_statement	financial	debit	cash_flow_statement_metric	usd	11
+Purchase of Property, Leasehold Improvements and Equipment	purchaseofplantpropertyandequipment	cash_flow_statement	financial	debit	cash_flow_statement_metric	usd	12
+Acquisitions	acquisitions	cash_flow_statement	financial	debit	cash_flow_statement_metric	usd	13
+Purchase of Investment Securities	purchaseofinvestments	cash_flow_statement	financial	debit	cash_flow_statement_metric	usd	14
+Sale of Property, Leasehold Improvements and Equipment	saleofplantpropertyandequipment	cash_flow_statement	financial	debit	cash_flow_statement_metric	usd	15
+Divestitures	divestitures	cash_flow_statement	financial	debit	cash_flow_statement_metric	usd	16
+Sale and/or Maturity of Investments	saleofinvestments	cash_flow_statement	financial	debit	cash_flow_statement_metric	usd	17
+Net Increase in Fed Funds Sold	netincreaseinfedfundssold	cash_flow_statement	financial	debit	cash_flow_statement_metric	usd	18
+Loans Held for Sale, Net	loansheldforsalenet	cash_flow_statement	financial	debit	cash_flow_statement_metric	usd	19
+Other Investing Activities, net	otherinvestingactivitiesnet	cash_flow_statement	financial	debit	cash_flow_statement_metric	usd	20
+Net Cash From Continuing Investing Activities	netcashfromcontinuinginvestingactivities	cash_flow_statement	financial	debit	cash_flow_statement_metric	usd	21
+Net Cash From Discontinued Investing Activities	netcashfromdiscontinuedinvestingactivities	cash_flow_statement	financial	debit	cash_flow_statement_metric	usd	22
+Net Cash From Investing Activities	netcashfrominvestingactivities	cash_flow_statement	financial	debit	cash_flow_statement_metric	usd	23
+Net Change in Deposits	netchangeindeposits	cash_flow_statement	financial	debit	cash_flow_statement_metric	usd	24
+Issuance of Debt	issuanceofdebt	cash_flow_statement	financial	debit	cash_flow_statement_metric	usd	25
+Issuance of Preferred Equity	issuanceofpreferredequity	cash_flow_statement	financial	debit	cash_flow_statement_metric	usd	26
+Issuance of Common Equity	issuanceofcommonequity	cash_flow_statement	financial	debit	cash_flow_statement_metric	usd	27
+Repayment of Debt	repaymentofdebt	cash_flow_statement	financial	debit	cash_flow_statement_metric	usd	28
+Repurchase of Preferred Equity	repurchaseofpreferredequity	cash_flow_statement	financial	debit	cash_flow_statement_metric	usd	29
+Repurchase of Common Equity	repurchaseofcommonequity	cash_flow_statement	financial	debit	cash_flow_statement_metric	usd	30
+Payment of Dividends	paymentofdividends	cash_flow_statement	financial	debit	cash_flow_statement_metric	usd	31
+Other Financing Activities, Net	otherfinancingactivitiesnet	cash_flow_statement	financial	debit	cash_flow_statement_metric	usd	32
+Net Cash From Continuing Financing Activities	netcashfromcontinuingfinancingactivities	cash_flow_statement	financial	debit	cash_flow_statement_metric	usd	33
+Net Cash From Discontinued Financing Activities	netcashfromdiscontinuedfinancingactivities	cash_flow_statement	financial	debit	cash_flow_statement_metric	usd	34
+Net Cash From Financing Activities	netcashfromfinancingactivities	cash_flow_statement	financial	debit	cash_flow_statement_metric	usd	35
+Effect of Exchange Rate Changes	effectofexchangeratechanges	cash_flow_statement	financial	debit	cash_flow_statement_metric	usd	36
+Other Net Changes in Cash	othernetchangesincash	cash_flow_statement	financial	debit	cash_flow_statement_metric	usd	37
+Net Change in Cash & Equivalents	netchangeincash	cash_flow_statement	financial	debit	cash_flow_statement_metric	usd	38
+Cash Interest Paid	cashinterestpaid	cash_flow_statement	financial		cash_flow_statement_metric	usd	39
+Cash Interest Received	cashinterestreceived	cash_flow_statement	financial		cash_flow_statement_metric	usd	40
+Cash Income Taxes Paid	cashincometaxespaid	cash_flow_statement	financial		cash_flow_statement_metric	usd	41
+Common Equity to Total Capital	commontocap	calculations	financial		capital_structure	percentage
+Debt to Total Capital	debttototalcapital	calculations	financial		capital_structure	percentage
+Long-Term Debt to Total Capital	ltdebttocap	calculations	financial		capital_structure	percentage
+Noncontrolling Interests to Total Capital	noncontrolinttocap	calculations	financial		capital_structure	percentage
+Preferred Equity to Total Capital	preferredtocap	calculations	financial		capital_structure	percentage
+Short-Term Debt to Total Capital	stdebttocap	calculations	financial		capital_structure	percentage
+EBIT Less CapEx to Interest Expense	ebitlesscapextointerestex	calculations	financial		coverage	float
+EBIT to Interest Expense	ebittointerestex	calculations	financial		coverage	float
+Free Cash Flow to Firm to Interest Expense	fcfftointerestex	calculations	financial		coverage	float
+NOPAT Less CapEx to Interest Expense	nopatlesscapextointex	calculations	financial		coverage	float
+NOPAT to Interest Expense	nopattointerestex	calculations	financial		coverage	float
+Operating Cash Flow Less CapEx to Interest Expense	ocflesscapextointerestex	calculations	financial		coverage	float
+Operating Cash Flow to Interest Expense	ocftointerestex	calculations	financial		coverage	float
+Augmented Payout Ratio	augmentedpayoutratio	calculations	financial		effectiveness	percentage
+Cash Return on Invested Capital (CROIC)	croic	calculations	financial		effectiveness	percentage
+Dividend Payout Ratio	divpayoutratio	calculations	financial		effectiveness	percentage
+Net Nonoperating Expense Percent (NNEP)	nnep	calculations	financial		effectiveness	percentage
+Noncontrolling Interest Sharing Ratio	noncontrollinginterestsharingratio	calculations	financial		effectiveness	percentage
+Operating Cash Flow to CapEx	ocftocapex	calculations	financial		effectiveness	percentage
+Operating Return on Assets (OROA)	oroa	calculations	financial		effectiveness	percentage
+Return on Assets (ROA)	roa	calculations	financial		effectiveness	percentage
+Return on Common Equity (ROCE)	roce	calculations	financial		effectiveness	percentage
+Return on Equity (ROE)	roe	calculations	financial		effectiveness	percentage
+Return on Invested Capital (ROIC)	roic	calculations	financial		effectiveness	percentage
+Return on Net Nonoperating Assets (RNNOA)	rnnoa	calculations	financial		effectiveness	percentage
+ROIC Less NNEP Spread (ROIC-NNEP)	roicnnepspread	calculations	financial		effectiveness	percentage
+Asset Turnover	assetturnover	calculations	financial		efficiency	float
+Fixed Asset Turnover	faturnover	calculations	financial		efficiency	float
+Invested Capital Turnover	investedcapitalturnover	calculations	financial		efficiency	float
+EBIT Growth	ebitgrowth	calculations	financial		growth	percentage
+EBIT Q/Q Growth	ebitqoqgrowth	calculations	financial		growth	percentage
+EBITDA Growth	ebitdagrowth	calculations	financial		growth	percentage
+EBITDA Q/Q Growth	ebitdaqoqgrowth	calculations	financial		growth	percentage
+EPS Growth	epsgrowth	calculations	financial		growth	percentage
+EPS Q/Q Growth	epsqoqgrowth	calculations	financial		growth	percentage
+Free Cash Flow Firm Growth	fcffgrowth	calculations	financial		growth	percentage
+Free Cash Flow Firm Q/Q Growth	fcffqoqgrowth	calculations	financial		growth	percentage
+Invested Capital Growth	investedcapitalgrowth	calculations	financial		growth	percentage
+Invested Capital Q/Q Growth	investedcapitalqoqgrowth	calculations	financial		growth	percentage
+Net Income Growth	netincomegrowth	calculations	financial		growth	percentage
+Net Income Q/Q Growth	netincomeqoqgrowth	calculations	financial		growth	percentage
+NOPAT Growth	nopatgrowth	calculations	financial		growth	percentage
+NOPAT Q/Q Growth	nopatqoqgrowth	calculations	financial		growth	percentage
+Operating Cash Flow Growth	ocfgrowth	calculations	financial		growth	percentage
+Operating Cash Flow Q/Q Growth	ocfqoqgrowth	calculations	financial		growth	percentage
+Revenue Growth	revenuegrowth	calculations	financial		growth	percentage
+Revenue Q/Q Growth	revenueqoqgrowth	calculations	financial		growth	percentage
+Compound Leverage Factor	compoundleveragefactor	calculations	financial		leverage	float
+Debt to Equity	debttoequity	calculations	financial		leverage	float
+Financial Leverage	finleverage	calculations	financial		leverage	float
+Leverage Ratio	leverageratio	calculations	financial		leverage	float
+Long-Term Debt to Equity	ltdebttoequity	calculations	financial		leverage	float
+Book Value per Share	bookvaluepershare	calculations	financial		metric	usdpershare
+Capital Expenditures (CapEx)	capex	calculations	financial		metric	usd
+Earnings before Interest and Taxes (EBIT)	ebit	calculations	financial		metric	usd
+Earnings before Interest, Taxes, Depreciation and Amortization (EBITDA)	ebitda	calculations	financial		metric	usd
+Free Cash Flow to Firm (FCFF)	freecashflow	calculations	financial		metric	usd
+Increase / (Decrease) in Invested Capital	investedcapitalincreasedecrease	calculations	financial		metric	usd
+Invested Capital	investedcapital	calculations	financial		metric	usd
+Net Debt	netdebt	calculations	financial		metric	usd
+Net Nonoperating Expense (NNE)	netnonopex	calculations	financial		metric	usd
+Net Nonoperating Obligations (NNO)	netnonopobligations	calculations	financial		metric	usd
+Net Operating Profit after Tax (NOPAT)	nopat	calculations	financial		metric	usd
+Normalized Net Operating Profit after Tax (NOPAT)	normalizednopat	calculations	financial		metric	usd
+Tangible Book Value per Share	tangbookvaluepershare	calculations	financial		metric	usdpershare
+Total Capital	totalcapital	calculations	financial		metric	usd
+Total Debt	debt	calculations	financial		metric	usd
+Total Depreciation and Amortization (D&A)	depreciationandamortization	calculations	financial		metric	usd
+Total Long-Term Debt	ltdebtandcapleases	calculations	financial		metric	usd
+EBIT Margin	ebitmargin	calculations	financial		profitability	percentage
+EBITDA Margin	ebitdamargin	calculations	financial		profitability	percentage
+Effective Tax Rate	efftaxrate	calculations	financial		profitability	percentage
+Interest Burden Percent	interestburdenpct	calculations	financial		profitability	percentage
+NOPAT Margin	nopatmargin	calculations	financial		profitability	percentage
+Normalized NOPAT Margin	normalizednopatmargin	calculations	financial		profitability	percentage
+Operating Expenses to Revenue	opextorevenue	calculations	financial		profitability	percentage
+Pre Tax Income Margin	pretaxincomemargin	calculations	financial		profitability	percentage
+Profit (Net Income) Margin	profitmargin	calculations	financial		profitability	percentage
+SG&A Expenses to Revenue	sgaextorevenue	calculations	financial		profitability	percentage
+Tax Burden Percent	taxburdenpct	calculations	financial		profitability	percentage
+Debt to EBITDA	debttoebitda	calculations	financial		solvency	float
+Debt to NOPAT	debttonopat	calculations	financial		solvency	float
+Long-Term Debt to EBITDA	ltdebttoebitda	calculations	financial		solvency	float
+Long-Term Debt to NOPAT	ltdebttonopat	calculations	financial		solvency	float
+Net Debt to EBITDA	netdebttoebitda	calculations	financial		solvency	float
+Net Debt to NOPAT	netdebttonopat	calculations	financial		solvency	float
+Dividend Yield	dividendyield	calculations	financial		valuation	percentage
+Earnings Yield	earningsyield	calculations	financial		valuation	percentage
+Enterprise Value (EV)	enterprisevalue	calculations	financial		valuation	usd
+Enterprise Value to EBIT (EV/EBIT)	evtoebit	calculations	financial		valuation	multiple
+Enterprise Value to EBITDA (EV/EBITDA)	evtoebitda	calculations	financial		valuation	multiple
+Enterprise Value to Free Cash Flow (EV/FCFF)	evtofcff	calculations	financial		valuation	multiple
+Enterprise Value to Invested Capital (EV/IC)	evtoinvestedcapital	calculations	financial		valuation	multiple
+Enterprise Value to NOPAT (EV/NOPAT)	evtonopat	calculations	financial		valuation	multiple
+Enterprise Value to Operating Cash Flow (EV/OCF)	evtoocf	calculations	financial		valuation	multiple
+Enterprise Value to Revenue (EV/Rev)	evtorevenue	calculations	financial		valuation	multiple
+Market Capitalization	marketcap	calculations	financial		valuation	usd
+Price to Book Value (P/BV)	pricetobook	calculations	financial		valuation	multiple
+Price to Earnings (P/E)	pricetoearnings	calculations	financial		valuation	multiple
+Price to Revenue (P/Rev)	pricetorevenue	calculations	financial		valuation	multiple
+Price to Tangible Book Value (P/TBV)	pricetotangiblebook

@@ -1,0 +1,259 @@
+Operating Revenue	operatingrevenue	income_statement	industrial	credit	income_statement_metric	usd	1
+Other Revenue	otherrevenue	income_statement	industrial	credit	income_statement_metric	usd	2
+Total Revenue	totalrevenue	income_statement	industrial	credit	income_statement_metric	usd	3
+Operating Cost of Revenue	operatingcostofrevenue	income_statement	industrial	debit	income_statement_metric	usd	4
+Other Cost of Revenue	othercostofrevenue	income_statement	industrial	debit	income_statement_metric	usd	5
+Total Cost of Revenue	totalcostofrevenue	income_statement	industrial	debit	income_statement_metric	usd	6
+Total Gross Profit	totalgrossprofit	income_statement	industrial	credit	income_statement_metric	usd	7
+Selling, General & Admin Expense	sgaexpense	income_statement	industrial	debit	income_statement_metric	usd	8
+Marketing Expense	marketingexpense	income_statement	industrial	debit	income_statement_metric	usd	9
+Research & Development Expense	rdexpense	income_statement	industrial	debit	income_statement_metric	usd	10
+Exploration Expense	explorationexpense	income_statement	industrial	debit	income_statement_metric	usd	11
+Depreciation Expense	depreciationexpense	income_statement	industrial	debit	income_statement_metric	usd	12
+Amortization Expense	amortizationexpense	income_statement	industrial	debit	income_statement_metric	usd	13
+Depletion Expense	depletionexpense	income_statement	industrial	debit	income_statement_metric	usd	14
+Other Operating Expenses / (Income)	otheroperatingexpenses	income_statement	industrial	debit	income_statement_metric	usd	15
+Impairment Charge	impairmentexpense	income_statement	industrial	debit	income_statement_metric	usd	16
+Restructuring Charge	restructuringcharge	income_statement	industrial	debit	income_statement_metric	usd	17
+Other Special Charges / (Income)	otherspecialcharges	income_statement	industrial	debit	income_statement_metric	usd	18
+Total Operating Expenses	totaloperatingexpenses	income_statement	industrial	debit	income_statement_metric	usd	19
+Total Operating Income	totaloperatingincome	income_statement	industrial	credit	income_statement_metric	usd	20
+Interest Expense	totalinterestexpense	income_statement	industrial	debit	income_statement_metric	usd	21
+Interest & Investment Income	totalinterestincome	income_statement	industrial	credit	income_statement_metric	usd	22
+Other Income / (Expense), net	otherincome	income_statement	industrial	credit	income_statement_metric	usd	23
+Total Other Income / (Expense), net	totalotherincome	income_statement	industrial	credit	income_statement_metric	usd	24
+Total Pre-Tax Income	totalpretaxincome	income_statement	industrial	credit	income_statement_metric	usd	25
+Income Tax Expense	incometaxexpense	income_statement	industrial	debit	income_statement_metric	usd	26
+Other Gains / (Losses), net	othergains	income_statement	industrial	credit	income_statement_metric	usd	27
+Net Income / (Loss) Continuing Operations	netincomecontinuing	income_statement	industrial	credit	income_statement_metric	usd	28
+Net Income / (Loss) Discontinued Operations	netincomediscontinued	income_statement	industrial	credit	income_statement_metric	usd	29
+Extraordinary Income / (Loss), net	extraordinaryincome	income_statement	industrial	credit	income_statement_metric	usd	30
+Other Adjustments to Consolidated Net Income / (Loss)	otheradjustmentstoconsolidatednetincome	income_statement	industrial	credit	income_statement_metric	usd	31
+Consolidated Net Income / (Loss)	netincome	income_statement	industrial	credit	income_statement_metric	usd	32
+Preferred Stock Dividends Declared	preferreddividends	income_statement	industrial	debit	income_statement_metric	usd	33
+Net Income / (Loss) Attributable to Noncontrolling Interest	netincometononcontrollinginterest	income_statement	industrial	debit	income_statement_metric	usd	34
+Other Adjustments to Net Income / (Loss) Attributable to Common Shareholders)	otheradjustmentstonetincometocommon	income_statement	industrial	debit	income_statement_metric	usd	35
+Net Income / (Loss) Attributable to Common Shareholders	netincometocommon	income_statement	industrial	credit	income_statement_metric	usd	36
+Weighted Average Basic Shares Outstanding	weightedavebasicsharesos	income_statement	industrial		income_statement_metric	shares	37
+Basic Earnings per Share	basiceps	income_statement	industrial		income_statement_metric	usdpershare	38
+Weighted Average Diluted Shares Outstanding	weightedavedilutedsharesos	income_statement	industrial		income_statement_metric	shares	39
+Diluted Earnings per Share	dilutedeps	income_statement	industrial		income_statement_metric	usdpershare	40
+Cash Dividends to Common per Share	cashdividendspershare	income_statement	industrial		income_statement_metric	usdpershare	41
+Cash & Equivalents	cashandequivalents	balance_sheet	industrial	debit	balance_sheet_metric	usd	1
+Restricted Cash	restrictedcash	balance_sheet	industrial	debit	balance_sheet_metric	usd	2
+Short-Term Investments	shortterminvestments	balance_sheet	industrial	debit	balance_sheet_metric	usd	3
+Note & Lease Receivable	notereceivable	balance_sheet	industrial	debit	balance_sheet_metric	usd	4
+Accounts Receivable	accountsreceivable	balance_sheet	industrial	debit	balance_sheet_metric	usd	5
+Inventories, net	netinventory	balance_sheet	industrial	debit	balance_sheet_metric	usd	6
+Prepaid Expenses	prepaidexpenses	balance_sheet	industrial	debit	balance_sheet_metric	usd	7
+Current Deferred & Refundable Income Taxes	currentdeferredtaxassets	balance_sheet	industrial	debit	balance_sheet_metric	usd	8
+Other Current Assets	othercurrentassets	balance_sheet	industrial	debit	balance_sheet_metric	usd	9
+Other Current Nonoperating Assets	othercurrentnonoperatingassets	balance_sheet	industrial	debit	balance_sheet_metric	usd	10
+Total Current Assets	totalcurrentassets	balance_sheet	industrial	debit	balance_sheet_metric	usd	11
+Plant, Property & Equipment, gross	grossppe	balance_sheet	industrial	debit	balance_sheet_metric	usd	12
+Accumulated Depreciation	accumulateddepreciation	balance_sheet	industrial	credit	balance_sheet_metric	usd	13
+Plant, Property, & Equipment, net	netppe	balance_sheet	industrial	debit	balance_sheet_metric	usd	14
+Long-Term Investments	longterminvestments	balance_sheet	industrial	debit	balance_sheet_metric	usd	15
+Noncurrent Note & Lease Receivables	noncurrentnotereceivables	balance_sheet	industrial	debit	balance_sheet_metric	usd	16
+Goodwill	goodwill	balance_sheet	industrial	debit	balance_sheet_metric	usd	17
+Intangible Assets	intangibleassets	balance_sheet	industrial	debit	balance_sheet_metric	usd	18
+Noncurrent Deferred & Refundable Income Taxes	noncurrentdeferredtaxassets	balance_sheet	industrial	debit	balance_sheet_metric	usd	19
+Employee Benefit Assets	employeebenefitassets	balance_sheet	industrial	debit	balance_sheet_metric	usd	20
+Other Noncurrent Operating Assets	othernoncurrentassets	balance_sheet	industrial	debit	balance_sheet_metric	usd	21
+Other Noncurrent Nonoperating Assets	othernoncurrentnonoperatingassets	balance_sheet	industrial	debit	balance_sheet_metric	usd	22
+Total Noncurrent Assets	totalnoncurrentassets	balance_sheet	industrial	debit	balance_sheet_metric	usd	23
+Total Assets	totalassets	balance_sheet	industrial	debit	balance_sheet_metric	usd	24
+Short-Term Debt	shorttermdebt	balance_sheet	industrial	credit	balance_sheet_metric	usd	25
+Accounts Payable	accountspayable	balance_sheet	industrial	credit	balance_sheet_metric	usd	26
+Accrued Expenses	accruedexpenses	balance_sheet	industrial	credit	balance_sheet_metric	usd	27
+Customer Deposits	customerdeposits	balance_sheet	industrial	credit	balance_sheet_metric	usd	28
+Dividends Payable	dividendspayable	balance_sheet	industrial	credit	balance_sheet_metric	usd	29
+Current Deferred Revenue	currentdeferredrevenue	balance_sheet	industrial	credit	balance_sheet_metric	usd	30
+Current Deferred & Payable Income Tax Liabilities	currentdeferredtaxliabilities	balance_sheet	industrial	credit	balance_sheet_metric	usd	31
+Current Employee Benefit Liabilities	currentemployeebenefitliabilities	balance_sheet	industrial	credit	balance_sheet_metric	usd	32
+Other Taxes Payable	othertaxespayable	balance_sheet	industrial	credit	balance_sheet_metric	usd	33
+Other Current Liabilities	othercurrentliabilities	balance_sheet	industrial	credit	balance_sheet_metric	usd	34
+Other Current Nonoperating Liabilities	othercurrentnonoperatingliabilities	balance_sheet	industrial	credit	balance_sheet_metric	usd	35
+Total Current Liabilities	totalcurrentliabilities	balance_sheet	industrial	credit	balance_sheet_metric	usd	36
+Long-Term Debt	longtermdebt	balance_sheet	industrial	credit	balance_sheet_metric	usd	37
+Capital Lease Obligations	capitalleaseobligations	balance_sheet	industrial	credit	balance_sheet_metric	usd	38
+Asset Retirement Reserve & Litigation Obligation	assetretirementandlitigationobligation	balance_sheet	industrial	credit	balance_sheet_metric	usd	39
+Noncurrent Deferred Revenue	noncurrentdeferredrevenue	balance_sheet	industrial	credit	balance_sheet_metric	usd	40
+Noncurrent Deferred & Payable Income Tax Liabilities	noncurrentdeferredtaxliabilities	balance_sheet	industrial	credit	balance_sheet_metric	usd	41
+Noncurrent Employee Benefit Liabilities	noncurrentemployeebenefitliabilities	balance_sheet	industrial	credit	balance_sheet_metric	usd	42
+Other Noncurrent Operating Liabilities	othernoncurrentliabilities	balance_sheet	industrial	credit	balance_sheet_metric	usd	43
+Other Noncurrent Nonoperating Liabilities	othernoncurrentnonoperatingliabilities	balance_sheet	industrial	credit	balance_sheet_metric	usd	44
+Total Noncurrent Liabilities	totalnoncurrentliabilities	balance_sheet	industrial	credit	balance_sheet_metric	usd	45
+Total Liabilities	totalliabilities	balance_sheet	industrial	credit	balance_sheet_metric	usd	46
+Commitments & Contingencies	commitmentsandcontingencies	balance_sheet	industrial	credit	balance_sheet_metric	usd	47
+Redeemable Noncontrolling Interest	redeemablenoncontrollinginterest	balance_sheet	industrial	credit	balance_sheet_metric	usd	48
+Preferred Stock	totalpreferredequity	balance_sheet	industrial	credit	balance_sheet_metric	usd	49
+Common Stock	commonequity	balance_sheet	industrial	credit	balance_sheet_metric	usd	50
+Retained Earnings	retainedearnings	balance_sheet	industrial	credit	balance_sheet_metric	usd	51
+Treasury Stock	treasurystock	balance_sheet	industrial	credit	balance_sheet_metric	usd	52
+Accumulated Other Comprehensive Income / (Loss)	aoci	balance_sheet	industrial	credit	balance_sheet_metric	usd	53
+Other Equity Adjustments	otherequity	balance_sheet	industrial	credit	balance_sheet_metric	usd	54
+Total Common Equity	totalcommonequity	balance_sheet	industrial	credit	balance_sheet_metric	usd	55
+Total Preferred & Common Equity	totalequity	balance_sheet	industrial	credit	balance_sheet_metric	usd	56
+Noncontrolling Interest	noncontrollinginterests	balance_sheet	industrial	credit	balance_sheet_metric	usd	57
+Total Equity & Noncontrolling Interests	totalequityandnoncontrollinginterests	balance_sheet	industrial	credit	balance_sheet_metric	usd	58
+Total Liabilities & Shareholders’ Equity	totalliabilitiesandequity	balance_sheet	industrial	credit	balance_sheet_metric	usd	59
+Consolidated Net Income / (Loss)	netincome	cash_flow_statement	industrial	credit	cash_flow_statement_metric	usd	1
+Net Income / (Loss) Discontinued Operations	netincomediscontinued	cash_flow_statement	industrial	credit	cash_flow_statement_metric	usd	2
+Net Income / (Loss) Continuing Operations	netincomecontinuing	cash_flow_statement	industrial	credit	cash_flow_statement_metric	usd	3
+Depreciation Expense	depreciationexpense	cash_flow_statement	industrial	debit	cash_flow_statement_metric	usd	4
+Amortization Expense	amortizationexpense	cash_flow_statement	industrial	debit	cash_flow_statement_metric	usd	5
+Non-Cash Adjustments To Reconcile Net Income	noncashadjustmentstonetincome	cash_flow_statement	industrial	debit	cash_flow_statement_metric	usd	6
+Changes in Operating Assets and Liabilities, net	increasedecreaseinoperatingcapital	cash_flow_statement	industrial	debit	cash_flow_statement_metric	usd	7
+Net Cash From Continuing Operating Activities	netcashfromcontinuingoperatingactivities	cash_flow_statement	industrial	debit	cash_flow_statement_metric	usd	8
+Net Cash From Discontinued Operating Activities	netcashfromdiscontinuedoperatingactivities	cash_flow_statement	industrial	debit	cash_flow_statement_metric	usd	9
+Net Cash From Operating Activities	netcashfromoperatingactivities	cash_flow_statement	industrial	debit	cash_flow_statement_metric	usd	10
+Purchase of Property, Plant & Equipment	purchaseofplantpropertyandequipment	cash_flow_statement	industrial	debit	cash_flow_statement_metric	usd	11
+Acquisitions	acquisitions	cash_flow_statement	industrial	debit	cash_flow_statement_metric	usd	12
+Purchase of Investments	purchaseofinvestments	cash_flow_statement	industrial	debit	cash_flow_statement_metric	usd	13
+Sale of Property, Plant & Equipment	saleofplantpropertyandequipment	cash_flow_statement	industrial	debit	cash_flow_statement_metric	usd	14
+Divestitures	divestitures	cash_flow_statement	industrial	debit	cash_flow_statement_metric	usd	15
+Sale and/or Maturity of Investments	saleofinvestments	cash_flow_statement	industrial	debit	cash_flow_statement_metric	usd	16
+Other Investing Activities, net	otherinvestingactivitiesnet	cash_flow_statement	industrial	debit	cash_flow_statement_metric	usd	17
+Net Cash From Continuing Investing Activities	netcashfromcontinuinginvestingactivities	cash_flow_statement	industrial	debit	cash_flow_statement_metric	usd	18
+Net Cash From Discontinued Investing Activities	netcashfromdiscontinuedinvestingactivities	cash_flow_statement	industrial	debit	cash_flow_statement_metric	usd	19
+Net Cash From Investing Activities	netcashfrominvestingactivities	cash_flow_statement	industrial	debit	cash_flow_statement_metric	usd	20
+Repayment of Debt	repaymentofdebt	cash_flow_statement	industrial	debit	cash_flow_statement_metric	usd	21
+Repurchase of Preferred Equity	repurchaseofpreferredequity	cash_flow_statement	industrial	debit	cash_flow_statement_metric	usd	22
+Repurchase of Common Equity	repurchaseofcommonequity	cash_flow_statement	industrial	debit	cash_flow_statement_metric	usd	23
+Payment of Dividends	paymentofdividends	cash_flow_statement	industrial	debit	cash_flow_statement_metric	usd	24
+Issuance of Debt	issuanceofdebt	cash_flow_statement	industrial	debit	cash_flow_statement_metric	usd	25
+Issuance of Preferred Equity	issuanceofpreferredequity	cash_flow_statement	industrial	debit	cash_flow_statement_metric	usd	26
+Issuance of Common Equity	issuanceofcommonequity	cash_flow_statement	industrial	debit	cash_flow_statement_metric	usd	27
+Other Financing Activities, net	otherfinancingactivitiesnet	cash_flow_statement	industrial	debit	cash_flow_statement_metric	usd	28
+Net Cash From Continuing Financing Activities	netcashfromcontinuingfinancingactivities	cash_flow_statement	industrial	debit	cash_flow_statement_metric	usd	29
+Net Cash From Discontinued Financing Activities	netcashfromdiscontinuedfinancingactivities	cash_flow_statement	industrial	debit	cash_flow_statement_metric	usd	30
+Net Cash From Financing Activities	netcashfromfinancingactivities	cash_flow_statement	industrial	debit	cash_flow_statement_metric	usd	31
+Effect of Exchange Rate Changes	effectofexchangeratechanges	cash_flow_statement	industrial	debit	cash_flow_statement_metric	usd	32
+Other Net Changes in Cash	othernetchangesincash	cash_flow_statement	industrial	debit	cash_flow_statement_metric	usd	33
+Net Change in Cash & Equivalents	netchangeincash	cash_flow_statement	industrial	debit	cash_flow_statement_metric	usd	34
+Cash Interest Paid	cashinterestpaid	cash_flow_statement	industrial		cash_flow_statement_metric	usd	35
+Cash Interest Received	cashinterestreceived	cash_flow_statement	industrial		cash_flow_statement_metric	usd	36
+Cash Income Taxes Paid	cashincometaxespaid	cash_flow_statement	industrial		cash_flow_statement_metric	usd	37
+Common Equity to Total Capital	commontocap	calculations	industrial		capital_structure	percentage
+Debt to Total Capital	debttototalcapital	calculations	industrial		capital_structure	percentage
+Long-Term Debt to Total Capital	ltdebttocap	calculations	industrial		capital_structure	percentage
+Noncontrolling Interests to Total Capital	noncontrolinttocap	calculations	industrial		capital_structure	percentage
+Preferred Equity to Total Capital	preferredtocap	calculations	industrial		capital_structure	percentage
+Short-Term Debt to Total Capital	stdebttocap	calculations	industrial		capital_structure	percentage
+EBIT Less CapEx to Interest Expense	ebitlesscapextointerestex	calculations	industrial		coverage	float
+EBIT to Interest Expense	ebittointerestex	calculations	industrial		coverage	float
+Free Cash Flow to Firm to Interest Expense	fcfftointerestex	calculations	industrial		coverage	float
+NOPAT Less CapEx to Interest Expense	nopatlesscapextointex	calculations	industrial		coverage	float
+NOPAT to Interest Expense	nopattointerestex	calculations	industrial		coverage	float
+Operating Cash Flow Less CapEx to Interest Expense	ocflesscapextointerestex	calculations	industrial		coverage	float
+Operating Cash Flow to Interest Expense	ocftointerestex	calculations	industrial		coverage	float
+Augmented Payout Ratio	augmentedpayoutratio	calculations	industrial		effectiveness	percentage
+Cash Return on Invested Capital (CROIC)	croic	calculations	industrial		effectiveness	percentage
+Dividend Payout Ratio	divpayoutratio	calculations	industrial		effectiveness	percentage
+Net Nonoperating Expense Percent (NNEP)	nnep	calculations	industrial		effectiveness	percentage
+Noncontrolling Interest Sharing Ratio	noncontrollinginterestsharingratio	calculations	industrial		effectiveness	percentage
+Operating Cash Flow to CapEx	ocftocapex	calculations	industrial		effectiveness	percentage
+Operating Return on Assets (OROA)	oroa	calculations	industrial		effectiveness	percentage
+Return on Assets (ROA)	roa	calculations	industrial		effectiveness	percentage
+Return on Common Equity (ROCE)	roce	calculations	industrial		effectiveness	percentage
+Return on Equity (ROE)	roe	calculations	industrial		effectiveness	percentage
+Return on Invested Capital (ROIC)	roic	calculations	industrial		effectiveness	percentage
+Return on Net Nonoperating Assets (RNNOA)	rnnoa	calculations	industrial		effectiveness	percentage
+ROIC Less NNEP Spread (ROIC-NNEP)	roicnnepspread	calculations	industrial		effectiveness	percentage
+Accounts Payable Turnover	apturnover	calculations	industrial		efficiency	float
+Accounts Receivable Turnover	arturnover	calculations	industrial		efficiency	float
+Asset Turnover	assetturnover	calculations	industrial		efficiency	float
+Cash Conversion Cycle (CCC)	ccc	calculations	industrial		efficiency	days
+Days Inventory Outstanding (DIO)	dio	calculations	industrial		efficiency	days
+Days Payable Outstanding (DPO)	dpo	calculations	industrial		efficiency	days
+Days Sales Outstanding (DSO)	dso	calculations	industrial		efficiency	days
+Fixed Asset Turnover	faturnover	calculations	industrial		efficiency	float
+Inventory Turnover	invturnover	calculations	industrial		efficiency	float
+Invested Capital Turnover	investedcapitalturnover	calculations	industrial		efficiency	float
+EBIT Growth	ebitgrowth	calculations	industrial		growth	percentage
+EBIT Q/Q Growth	ebitqoqgrowth	calculations	industrial		growth	percentage
+EBITDA Growth	ebitdagrowth	calculations	industrial		growth	percentage
+EBITDA Q/Q Growth	ebitdaqoqgrowth	calculations	industrial		growth	percentage
+EPS Growth	epsgrowth	calculations	industrial		growth	percentage
+EPS Q/Q Growth	epsqoqgrowth	calculations	industrial		growth	percentage
+Free Cash Flow Firm Growth	fcffgrowth	calculations	industrial		growth	percentage
+Free Cash Flow Firm Q/Q Growth	fcffqoqgrowth	calculations	industrial		growth	percentage
+Invested Capital Growth	investedcapitalgrowth	calculations	industrial		growth	percentage
+Invested Capital Q/Q Growth	investedcapitalqoqgrowth	calculations	industrial		growth	percentage
+Net Income Growth	netincomegrowth	calculations	industrial		growth	percentage
+Net Income Q/Q Growth	netincomeqoqgrowth	calculations	industrial		growth	percentage
+NOPAT Growth	nopatgrowth	calculations	industrial		growth	percentage
+NOPAT Q/Q Growth	nopatqoqgrowth	calculations	industrial		growth	percentage
+Operating Cash Flow Growth	ocfgrowth	calculations	industrial		growth	percentage
+Operating Cash Flow Q/Q Growth	ocfqoqgrowth	calculations	industrial		growth	percentage
+Revenue Growth	revenuegrowth	calculations	industrial		growth	percentage
+Revenue Q/Q Growth	revenueqoqgrowth	calculations	industrial		growth	percentage
+Compound Leverage Factor	compoundleveragefactor	calculations	industrial		leverage	float
+Debt to Equity	debttoequity	calculations	industrial		leverage	float
+Debt to Equity	debttoebitda	calculations	industrial		leverage	float
+Financial Leverage	finleverage	calculations	industrial		leverage	float
+Leverage Ratio	leverageratio	calculations	industrial		leverage	float
+Long-Term Debt to Equity	ltdebttoequity	calculations	industrial		leverage	float
+Current Ratio	currentratio	calculations	industrial		liquidity	float
+Debt-free Net Working Capital to Revenue	dfnwctorev	calculations	industrial		liquidity	percentage
+Debt-free, Cash-free Net Working Capital to Revenue	dfcfnwctorev	calculations	industrial		liquidity	percentage
+Net Working Capital to Revenue	nwctorev	calculations	industrial		liquidity	percentage
+Quick Ratio	quickratio	calculations	industrial		liquidity	float
+Book Value per Share	bookvaluepershare	calculations	industrial		metric	usdpershare
+Capital Expenditures (CapEx)	capex	calculations	industrial		metric	usd
+Debt-free Net Working Capital (DFNWC)	dfnwc	calculations	industrial		metric	usd
+Debt-free, Cash-free Net Working Capital (DFCFNWC)	dfcfnwc	calculations	industrial		metric	usd
+Earnings before Interest and Taxes (EBIT)	ebit	calculations	industrial		metric	usd
+Earnings before Interest, Taxes, Depreciation and Amortization (EBITDA)	ebitda	calculations	industrial		metric	usd
+Free Cash Flow to Firm (FCFF)	freecashflow	calculations	industrial		metric	usd
+Increase / (Decrease) in Invested Capital	investedcapitalincreasedecrease	calculations	industrial		metric	usd
+Invested Capital	investedcapital	calculations	industrial		metric	usd
+Net Debt	netdebt	calculations	industrial		metric	usd
+Net Nonoperating Expense (NNE)	netnonopex	calculations	industrial		metric	usd
+Net Nonoperating Obligations (NNO)	netnonopobligations	calculations	industrial		metric	usd
+Net Operating Profit after Tax (NOPAT)	nopat	calculations	industrial		metric	usd
+Net Working Capital (NWC)	nwc	calculations	industrial		metric	usd
+Normalized Net Operating Profit after Tax (NOPAT)	normalizednopat	calculations	industrial		metric	usd
+Tangible Book Value per Share	tangbookvaluepershare	calculations	industrial		metric	usdpershare
+Total Capital	totalcapital	calculations	industrial		metric	usd
+Total Debt	debt	calculations	industrial		metric	usd
+Total Depreciation and Amortization (D&A)	depreciationandamortization	calculations	industrial		metric	usd
+Total Long-Term Debt	ltdebtandcapleases	calculations	industrial		metric	usd
+Cost of Revenue to Revenue	costofrevtorevenue	calculations	industrial		profitability	percentage
+EBIT Margin	ebitmargin	calculations	industrial		profitability	percentage
+EBITDA Margin	ebitdamargin	calculations	industrial		profitability	percentage
+Effective Tax Rate	efftaxrate	calculations	industrial		profitability	percentage
+Gross Margin	grossmargin	calculations	industrial		profitability	percentage
+Interest Burden Percent	interestburdenpct	calculations	industrial		profitability	percentage
+NOPAT Margin	nopatmargin	calculations	industrial		profitability	percentage
+Normalized NOPAT Margin	normalizednopatmargin	calculations	industrial		profitability	percentage
+Operating Expenses to Revenue	opextorevenue	calculations	industrial		profitability	percentage
+Operating Margin	operatingmargin	calculations	industrial		profitability	percentage
+Pre Tax Income Margin	pretaxincomemargin	calculations	industrial		profitability	percentage
+Profit (Net Income) Margin	profitmargin	calculations	industrial		profitability	percentage
+R&D to Revenue	rdextorevenue	calculations	industrial		profitability	percentage
+SG&A Expenses to Revenue	sgaextorevenue	calculations	industrial		profitability	percentage
+Tax Burden Percent	taxburdenpct	calculations	industrial		profitability	percentage
+Altman Z-Score	altmanzscore	calculations	industrial		solvency	float
+Debt to EBITDA	debttoebitda	calculations	industrial		solvency	float
+Debt to NOPAT	debttonopat	calculations	industrial		solvency	float
+Long-Term Debt to EBITDA	ltdebttoebitda	calculations	industrial		solvency	float
+Long-Term Debt to NOPAT	ltdebttonopat	calculations	industrial		solvency	float
+Net Debt to EBITDA	netdebttoebitda	calculations	industrial		solvency	float
+Net Debt to NOPAT	netdebttonopat	calculations	industrial		solvency	float
+Dividend Yield	dividendyield	calculations	industrial		valuation	percentage
+Earnings Yield	earningsyield	calculations	industrial		valuation	percentage
+Enterprise Value (EV)	enterprisevalue	calculations	industrial		valuation	usd
+Enterprise Value to EBIT (EV/EBIT)	evtoebit	calculations	industrial		valuation	multiple
+Enterprise Value to EBITDA (EV/EBITDA)	evtoebitda	calculations	industrial		valuation	multiple
+Enterprise Value to Free Cash Flow (EV/FCFF)	evtofcff	calculations	industrial		valuation	multiple
+Enterprise Value to Invested Capital (EV/IC)	evtoinvestedcapital	calculations	industrial		valuation	multiple
+Enterprise Value to NOPAT (EV/NOPAT)	evtonopat	calculations	industrial		valuation	multiple
+Enterprise Value to Operating Cash Flow (EV/OCF)	evtoocf	calculations	industrial		valuation	multiple
+Enterprise Value to Revenue (EV/Rev)	evtorevenue	calculations	industrial		valuation	multiple
+Market Capitalization	marketcap	calculations	industrial		valuation	usd
+Price to Book Value (P/BV)	pricetobook	calculations	industrial		valuation	multiple
+Price to Earnings (P/E)	pricetoearnings	calculations	industrial		valuation	multiple
+Price to Revenue (P/Rev)	pricetorevenue	calculations	industrial		valuation	multiple
+Price to Tangible Book Value (P/TBV)	pricetotangiblebook	calculations	industrial		valuation	multiple
