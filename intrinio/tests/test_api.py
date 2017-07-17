@@ -1,4 +1,5 @@
 import json
+import os.path
 import unittest
 
 import intrinio
@@ -8,6 +9,7 @@ intrinio.max_pages = 2  # during tests, limit number of pages to retrieve
 
 
 def inject_response(name):
+    name = os.path.join(os.path.dirname(__file__), name)
     with open(name, "r") as f:
         lines = f.readlines()
     print(len(lines))
