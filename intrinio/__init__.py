@@ -107,6 +107,20 @@ def data_point(identifier, item):
     return results
 
 
+IndexIndex = namedtuple("IndexIndex", ["symbol", "index_name"])
+
+Index = namedtuple("Index", ["symbol", "index_name", "continent", "country", "index_type"])
+
+
+def indices(identifier=None):
+    rsrc = "/indices"
+    if identifier is None:
+        results = _get_all(rsrc, {}, shape=IndexIndex)
+    else:
+        results = _get_all(rsrc, {"identifier": identifier}, shape=Index)
+    return results
+
+
 # ---------------------------------------------------------------
 
 max_pages = None

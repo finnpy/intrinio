@@ -17,6 +17,7 @@ def inject_response(name):
 
 
 class TestAPI(unittest.TestCase):
+
     def test_companies(self):
         if local:
             inject_response("companies.json")
@@ -138,6 +139,17 @@ class TestAPI(unittest.TestCase):
             self.assertEqual(r[5].identifier, "AAPL")
             self.assertEqual(r[5].item, "percent_change")
             self.assertEqual(r[5].value, -0.0085)
+
+    def test_indices(self):
+        if local:
+            inject_response("indices.json")
+        r = intrinio.indices()
+
+    def test_indices_by_id(self):
+        if local:
+            inject_response("indices_spx.json")
+        r = intrinio.indices("$SPX")
+
 
 if __name__ == "__main__":
     unittest.main(verbosity=2)
