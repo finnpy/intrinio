@@ -107,17 +107,26 @@ def data_point(identifier, item):
     return results
 
 
-IndexIndex = namedtuple("IndexIndex", ["symbol", "index_name"])
+# Index = namedtuple("Index", ["symbol", "index_name"])
 
-Index = namedtuple("Index", ["symbol", "index_name", "continent", "country", "index_type"])
+SICIndex = namedtuple("SICIndex", ["symbol", "index_name", "continent", "country", "index_type"])
 
 
-def indices(identifier=None):
+def indices(identifier=None, type=None, query=None):
     rsrc = "/indices"
-    if identifier is None:
-        results = _get_all(rsrc, {}, shape=IndexIndex)
-    else:
-        results = _get_all(rsrc, {"identifier": identifier}, shape=Index)
+    params = {}
+    if identifier is not None:
+        params["identifier"] = identifier
+
+    if query is not None:
+        params["query"] = query
+
+    data_shape = SICIndex
+    if type == "sic":
+        data_shape = SICIndex
+        params["type"] = type
+
+    results = _get_all(rsrc, params, shape=data_shape)
     return results
 
 

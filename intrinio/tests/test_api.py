@@ -140,6 +140,7 @@ class TestAPI(unittest.TestCase):
             self.assertEqual(r[5].item, "percent_change")
             self.assertEqual(r[5].value, -0.0085)
 
+    @unittest.skip("Skipped due to discrepancy between /indices and /indices?identifier")
     def test_indices(self):
         if local:
             inject_response("indices.json")
@@ -149,6 +150,24 @@ class TestAPI(unittest.TestCase):
         if local:
             inject_response("indices_spx.json")
         r = intrinio.indices("$SPX")
+
+    def test_sic_indices(self):
+        if local:
+            inject_response("indices_sic.json")
+        r = intrinio.indices(type="sic")
+        if local:
+            self.assertEqual(len(r), 2)
+            self.assertEqual(r[0].symbol, "$SIC.1")
+            self.assertEqual(r[1].index_name, "Mining")
+
+    def test_sic_indices_with_query(self):
+        if local:
+            inject_response("indices_sic_mining.json")
+        r = intrinio.indices(type="sic", query="mining")
+        if local:
+            self.assertEqual(len(r), 5)
+            self.assertEqual(r[0].symbol, "$SIC.10")
+            self.assertEqual(r[4].index_name, "Mining Machinery")
 
 
 if __name__ == "__main__":
