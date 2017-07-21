@@ -1,10 +1,9 @@
-from collections import namedtuple
 import json
 import urllib
+from collections import namedtuple
 
 import requests
 from requests.auth import HTTPBasicAuth
-
 
 CompanyIndex = namedtuple("CompanyIndex", ["ticker", "name", "lei", "cik", "latest_filing_date"])
 
@@ -74,7 +73,7 @@ SecurityIndex = namedtuple("SecurityIndex", ["ticker", "figi_ticker", "figi", "c
 Security = namedtuple("Security", ["ticker", "figi_ticker", "figi", "composite_figi", "composite_figi_ticker",
                                    "security_name", "market_sector", "security_type", "stock_exchange",
                                    "last_crsp_adj_date", "figi_uniqueid", "share_class_figi", "figi_exch_cntry",
-                                   "currency", "mic", "exch_symbol", "etf", "delisted_security",   "primary_listing"])
+                                   "currency", "mic", "exch_symbol", "etf", "delisted_security", "primary_listing"])
 
 
 def securities(identifier=None):
@@ -83,6 +82,28 @@ def securities(identifier=None):
         results = _get_all(rsrc, {}, shape=SecurityIndex)
     else:
         results = _get_all(rsrc, {"identifier": identifier}, shape=Security)
+    return results
+
+
+DataPoint = namedtuple("DataPoint", ["identifier", "item", "value"])
+
+
+def data_point(identifier, item):
+    if not isinstance(identifier, list):
+        raise TypeError("expected list of identifiers, got {}".format(type(identifier)))
+    if not isinstance(item, list):
+        raise TypeError("expected list of items, got {}".format(type(item)))
+
+    if len(identifier) < 1:
+        raise ValueError("expected non-empty list of identifers")
+    if len(item) < 1:
+        raise ValueError("expected non-empty list of items")
+
+    rsrc = "/data_point"
+    identifiers = ",".join(identifier)
+    items = ",".join(item)
+    params = {"identifer": identifiers, "item": items}
+    results = _get_all(rsrc, params, shape=DataPoint)
     return results
 
 

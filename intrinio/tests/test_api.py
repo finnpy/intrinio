@@ -13,11 +13,10 @@ def inject_response(name):
     with open(name, "r") as f:
         lines = f.readlines()
     print(len(lines))
-    intrinio._get = lambda rsrc, params, page: json.loads(lines[page-1])
+    intrinio._get = lambda rsrc, params, page: json.loads(lines[page - 1])
 
 
 class TestAPI(unittest.TestCase):
-
     def test_companies(self):
         if local:
             inject_response("companies.json")
@@ -97,7 +96,48 @@ class TestAPI(unittest.TestCase):
             self.assertTrue(c.pricetobook < 1000)
             self.assertTrue(c.pricetorevenue < 1000)
 
+    def test_data_point_invalid_id(self):
+        self.assertRaises(TypeError, lambda: intrinio.data_point(identifier=None, item=None))
+        self.assertRaises(TypeError, lambda: intrinio.data_point(identifier={}, item="123"))
+        self.assertRaises(TypeError, lambda: intrinio.data_point(identifier=set(), item=None))
+        self.assertRaises(ValueError, lambda: intrinio.data_point(identifier=[], item=[]))
+
+        valid_item = ["pricetoearnings"]
+        self.assertRaises(TypeError, lambda: intrinio.data_point(identifier=None, item=valid_item))
+        self.assertRaises(TypeError, lambda: intrinio.data_point(identifier="123", item=valid_item))
+        self.assertRaises(TypeError, lambda: intrinio.data_point(identifier=set(), item=valid_item))
+        self.assertRaises(ValueError, lambda: intrinio.data_point(identifier=[], item=valid_item))
+        self.assertRaises(TypeError, lambda: intrinio.data_point(identifier=[1], item=valid_item))
+
+        valid_id = ["AAPL"]
+        self.assertRaises(TypeError, lambda: intrinio.data_point(identifier=valid_id, item=None))
+        self.assertRaises(TypeError, lambda: intrinio.data_point(identifier=valid_id, item="123"))
+        self.assertRaises(TypeError, lambda: intrinio.data_point(identifier=valid_id, item=set()))
+        self.assertRaises(ValueError, lambda: intrinio.data_point(identifier=valid_id, item=[]))
+        self.assertRaises(TypeError, lambda: intrinio.data_point(identifier=valid_id, item=[1]))
+
+    def test_data_point_1_1(self):
+        if local:
+            inject_response("data_point_1_1.json")
+        r = intrinio.data_point(identifier=["AAPL"], item=["pricetoearnings"])
+        if local:
+            self.assertEqual(r.identifier, "AAPL")
+            self.assertEqual(r.item, "pricetoearnings")
+            self.assertEqual(r.value, 17.8763)
+
+    def test_data_point_M_N(self):
+        if local:
+            inject_response("data_point_m_n.json")
+        r = intrinio.data_point(identifier=["GOOGL", "AAPL"],
+                                item=["price_date", "close_price", "percent_change"])
+        if local:
+            self.assertEqual(len(r), 6)
+            self.assertEqual(r[0].identifier, "GOOGL")
+            self.assertEqual(r[0].item, "price_date")
+            self.assertEqual(r[0].value, "2015-10-30")
+            self.assertEqual(r[5].identifier, "AAPL")
+            self.assertEqual(r[5].item, "percent_change")
+            self.assertEqual(r[5].value, -0.0085)
 
 if __name__ == "__main__":
     unittest.main(verbosity=2)
-
