@@ -169,6 +169,24 @@ class TestAPI(unittest.TestCase):
             self.assertEqual(r[0].symbol, "$SIC.10")
             self.assertEqual(r[4].index_name, "Mining Machinery")
 
+    def test_economic_indices(self):
+        if local:
+            inject_response("indices_economic.json")
+        r = intrinio.indices(type="economic")
+        if local:
+            self.assertEqual(len(r), 2)
+            self.assertEqual(r[0].symbol, "$00XALCATM086NEST")
+            self.assertEqual(r[1].index_type, "economic")
+
+    def test_economic_indices_with_query(self):
+        if local:
+            inject_response("indices_economic_gdp.json")
+        r = intrinio.indices(type="economic", query="gdp")
+        if local:
+            self.assertEqual(len(r), 2)
+            self.assertEqual(r[0].symbol, "$AFGBCAGDPGDPPT")
+            self.assertEqual(r[1].units, "Percent of GDP")
+
 
 if __name__ == "__main__":
     unittest.main(verbosity=2)

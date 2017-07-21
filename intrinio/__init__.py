@@ -107,9 +107,14 @@ def data_point(identifier, item):
     return results
 
 
-# Index = namedtuple("Index", ["symbol", "index_name"])
+index_base_fields = ["symbol", "index_name"]
 
-SICIndex = namedtuple("SICIndex", ["symbol", "index_name", "continent", "country", "index_type"])
+SICIndex = namedtuple("SICIndex", index_base_fields + ["continent", "country", "index_type"])
+EconomicIndex = namedtuple("EconomicIndex", index_base_fields + ["fred_symbol", "update_frequency", "last_updated",
+                                                                 "description", "observation_start", "observation_end",
+                                                                 "popularity",
+                                                                 "seasonal_adjustment", "seasonal_adjustment_short",
+                                                                 "units", "units_short", "index_type"])
 
 
 def indices(identifier=None, type=None, query=None):
@@ -121,13 +126,44 @@ def indices(identifier=None, type=None, query=None):
     if query is not None:
         params["query"] = query
 
+    if type is not None:
+        params["type"] = type
+
     data_shape = SICIndex
     if type == "sic":
         data_shape = SICIndex
-        params["type"] = type
+
+    if type == "economic":
+        data_shape = EconomicIndex
 
     results = _get_all(rsrc, params, shape=data_shape)
     return results
+
+
+
+# TODO: /prices/exchange?identifier=^XNAS&price_date=2016-12-05
+
+# TODO: /filings
+# TODO: /companies/filings?identifier=AAPL
+# TODO: /news?identifier=AAPL
+
+# TODO: /fundamentals/standardized?identifier=AAPL&statement=income_statement&type=FY
+# TODO: /fundamentals/reported?identifier=AAPL&statement=income_statement&type=FY
+#
+# TODO: /financials/standardized?identifier=AAPL&statement=income_statement&fiscal_year=2015&fiscal_period=FY
+# TODO: /financials/reported?identifier=AAPL&statement=income_statement&fiscal_year=2015&fiscal_period=FY
+#
+# TODO: /tags/standardized?identifier=AAPL&statement=income_statement
+# TODO: /tags/reported?identifier=AAPL&statement=income_statement&fiscal_year=2015&fiscal_period=FY
+#
+# TODO: /companies/insider_transactions?identifier=AAPL
+# TODO: /companies/insider_ownership?identifier=AAPL
+#
+# TODO: /owners?institutional=false
+# TODO: /owners?query=Cook
+# TODO: /owners?identifier=<owner identifier>
+# TODO: /owners/insider_transactions?identifier=<owner identifier>
+# TODO: /owners/insider_holdings?cik=<cik identifier>
 
 
 # ---------------------------------------------------------------
