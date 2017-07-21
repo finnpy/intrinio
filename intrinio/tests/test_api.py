@@ -33,6 +33,16 @@ class TestAPI(unittest.TestCase):
         r = intrinio.companies("AAPL")
         self.assertEqual(r.ticker, "AAPL")
 
+    def test_financials(self):
+        # TODO: /financials : add test for fiscal_year and fiscal_period
+        if local:
+            inject_response("financials_standardized_aapl.json")
+        r = intrinio.financials(identifier="AAPL", statement="income_statement")
+        if local:
+            self.assertEqual(len(r), 2)
+            self.assertEqual(r[0].tag, "operatingrevenue")
+            self.assertEqual(r[1].value, 233715000000.0)
+
     def test_prices(self):
         if local:
             inject_response("prices_aapl.json")

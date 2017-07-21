@@ -26,11 +26,27 @@ def companies(identifier=None):
     return results
 
 
+Tag = namedtuple("Tag", ["tag", "value"])
+
+
+def financials(identifier, statement, fiscal_year=None, fiscal_period=None):
+    rsrc = "/financials"
+    params = {"identifier": identifier, "statement": statement}
+    if fiscal_year is not None:
+        params["fiscal_year"] = fiscal_year
+    if fiscal_period is not None:
+        params["fiscal_period"] = fiscal_period
+
+    results = _get_all(rsrc, params, shape=Tag)
+    return results
+
+
 Price = namedtuple('Price', ["date", "open", "high", "low", "close", "volume", "ex_dividend", "split_ratio",
                              "adj_open", "adj_high", "adj_low", "adj_close", "adj_volume"])
 
 
 def prices(identifier):
+    # TODO: /prices : add support for start_date and end_date
     rsrc = "/prices"
     results = _get_all(rsrc, {"identifier": identifier}, shape=Price)
     for entry in results:
@@ -140,7 +156,7 @@ def indices(identifier=None, type=None, query=None):
     return results
 
 
-
+# API endpoints to support:
 # TODO: /prices/exchange?identifier=^XNAS&price_date=2016-12-05
 
 # TODO: /filings
