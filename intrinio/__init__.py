@@ -1,6 +1,7 @@
 import json
 import urllib
 from collections import namedtuple
+from os.path import expanduser, join
 
 import requests
 from requests.auth import HTTPBasicAuth
@@ -187,12 +188,16 @@ def indices(identifier=None, type=None, query=None):
 max_pages = None
 
 
+def read_config():
+    with open(join(expanduser("~"), ".finnpy", "intrinio.json")) as f:
+        cfg = json.load(f)
+    return cfg
+
+
+_config = read_config()
+
 def _get(resource, params, page=1):
-    # TODO : don't open the keys file on every page get
-    # TODO : move implementation into separate get_auth() function
-    with open("keys.json") as f:
-        keys = json.load(f)['intrinio']
-    my_auth = HTTPBasicAuth(username=keys['user'], password=keys['pass'])
+    my_auth = HTTPBasicAuth(username=_config['user'], password=_config['pass'])
 
     d = dict(page_number=page)
     if len(params) > 0:
