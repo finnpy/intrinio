@@ -4,7 +4,8 @@ import unittest
 
 import intrinio
 
-local = True
+local = not intrinio.valid_config()
+
 intrinio.max_pages = 2  # during tests, limit number of pages to retrieve
 
 

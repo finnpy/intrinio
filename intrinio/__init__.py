@@ -1,5 +1,10 @@
 import json
-import urllib
+
+try:
+    from urllib import urlencode
+except:
+    from urllib.parse import urlencode
+
 from collections import namedtuple
 from os.path import expanduser, join
 
@@ -205,13 +210,17 @@ def read_config():
 _config = read_config()
 
 
+def valid_config():
+    return "user" in _config and "pass" in _config
+
+
 def _get(resource, params, page=1):
     my_auth = HTTPBasicAuth(username=_config['user'], password=_config['pass'])
 
     d = dict(page_number=page)
     if len(params) > 0:
         d.update(params)
-    query = "?" + urllib.urlencode(d)
+    query = "?" + urlencode(d)
 
     uri = "https://api.intrinio.com{}{}".format(resource, query)
     r = requests.get(uri, auth=my_auth)
