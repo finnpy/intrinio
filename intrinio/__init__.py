@@ -189,12 +189,21 @@ max_pages = None
 
 
 def read_config():
-    with open(join(expanduser("~"), ".finnpy", "intrinio.json")) as f:
-        cfg = json.load(f)
+    try:
+        with open(join(expanduser("~"), ".finnpy", "intrinio.json")) as f:
+            cfg = json.load(f)
+    except Exception as e:
+        print("""Configuration file not specified."
+                     "Please create a file ~/.finnpy/intrinio.json with the following structure:
+                     {\"user\": Intrinio user name
+                      \"pass\": Intrinio authorization token
+                     }""")
+        cfg = {}
     return cfg
 
 
 _config = read_config()
+
 
 def _get(resource, params, page=1):
     my_auth = HTTPBasicAuth(username=_config['user'], password=_config['pass'])
