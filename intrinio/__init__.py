@@ -124,7 +124,7 @@ def data_point(identifier, item):
     rsrc = "/data_point"
     identifiers = ",".join(identifier)
     items = ",".join(item)
-    params = {"identifer": identifiers, "item": items}
+    params = {"identifier": identifiers, "item": items}
     results = _get_all(rsrc, params, shape=DataPoint)
     return results
 
@@ -223,9 +223,10 @@ def _get(resource, params, page=1):
     query = "?" + urlencode(d)
 
     uri = "https://api.intrinio.com{}{}".format(resource, query)
-    r = requests.get(uri, auth=my_auth)
-    return r.json()
-
+    r = requests.get(uri, auth=my_auth).json()
+    if 'errors' in r:
+        raise Exception("Failed request {} -> {}".format(uri, str(r['errors'])))
+    return r
 
 def _get_all(resource, params, shape):
     results = []
