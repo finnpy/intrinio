@@ -36,7 +36,7 @@ Tag = namedtuple("Tag", ["tag", "value"])
 
 
 def financials(identifier, statement, fiscal_year=None, fiscal_period=None):
-    rsrc = "/financials"
+    rsrc = "/financials/standardized"
     params = {"identifier": identifier, "statement": statement}
     if fiscal_year is not None:
         params["fiscal_year"] = fiscal_year
@@ -228,6 +228,7 @@ def _get(resource, params, page=1):
         raise Exception("Failed request {} -> {}".format(uri, str(r['errors'])))
     return r
 
+
 def _get_all(resource, params, shape):
     results = []
     # f = open("raw.text", "w")
@@ -238,14 +239,13 @@ def _get_all(resource, params, shape):
         js = _get(resource, params, cur_page)
         # f.write(json.dumps(js)+"\n")
 
-        total_pages = js.get("total_pages")
-        if total_pages is None:
-            return shape(**js)
-        else:
+        if 'data' in js:
             results.extend(map(lambda s: shape(**s), js["data"]))
             cur_page += 1
+            total_pages = js.get("total_pages", 1)
             if max_pages is not None:
                 total_pages = min(total_pages, max_pages)
             print("Total results:", len(results), js["result_count"])
-
+        else:
+            return shape(**js)
     return results
